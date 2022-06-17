@@ -1,0 +1,1312 @@
+Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000189
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00017084, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00016f94])
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00016edc, Max: 0x00100000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x00000188   Data   RO        35420    RESET               BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/TOOLCHAIN_ARM/startup_stm32l475xx.o
+    0x08000188   0x00000008   Code   RO        36405  * !!!main             c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__main.o)
+    0x08000190   0x00000034   Code   RO        36968    !!!scatter          c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter.o)
+    0x080001c4   0x0000003a   Code   RO        36966    !!dczerorl          c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__dczerorl.o)
+    0x080001fe   0x00000002   PAD
+    0x08000200   0x0000001a   Code   RO        36970    !!handler_copy      c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_copy.o)
+    0x0800021a   0x00000002   PAD
+    0x0800021c   0x0000001c   Code   RO        36972    !!handler_zi        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_zi.o)
+    0x08000238   0x00000002   Code   RO        36404    .ARM.Collect$$libinit$$00000000  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit.o)
+    0x0800023a   0x00000004   Code   RO        36617    .ARM.Collect$$libinit$$00000001  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800023e   0x00000000   Code   RO        36620    .ARM.Collect$$libinit$$00000004  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800023e   0x00000008   Code   RO        36621    .ARM.Collect$$libinit$$00000005  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        36623    .ARM.Collect$$libinit$$0000000A  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000000   Code   RO        36625    .ARM.Collect$$libinit$$0000000C  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000246   0x00000004   Code   RO        36626    .ARM.Collect$$libinit$$0000000D  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000000   Code   RO        36627    .ARM.Collect$$libinit$$0000000E  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800024a   0x00000006   Code   RO        36628    .ARM.Collect$$libinit$$0000000F  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000250   0x00000000   Code   RO        36630    .ARM.Collect$$libinit$$00000011  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000250   0x0000000c   Code   RO        36631    .ARM.Collect$$libinit$$00000012  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800025c   0x00000000   Code   RO        36632    .ARM.Collect$$libinit$$00000013  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800025c   0x00000000   Code   RO        36634    .ARM.Collect$$libinit$$00000015  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800025c   0x0000000a   Code   RO        36635    .ARM.Collect$$libinit$$00000016  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36636    .ARM.Collect$$libinit$$00000017  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36638    .ARM.Collect$$libinit$$00000019  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36640    .ARM.Collect$$libinit$$0000001B  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36642    .ARM.Collect$$libinit$$0000001D  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36644    .ARM.Collect$$libinit$$0000001F  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36646    .ARM.Collect$$libinit$$00000021  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000000   Code   RO        36648    .ARM.Collect$$libinit$$00000023  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000266   0x00000004   Code   RO        36649    .ARM.Collect$$libinit$$00000024  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026a   0x00000000   Code   RO        36650    .ARM.Collect$$libinit$$00000025  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026a   0x00000000   Code   RO        36654    .ARM.Collect$$libinit$$0000002C  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026a   0x00000000   Code   RO        36656    .ARM.Collect$$libinit$$0000002E  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026a   0x00000000   Code   RO        36658    .ARM.Collect$$libinit$$00000030  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026a   0x00000004   Code   RO        36659    .ARM.Collect$$libinit$$00000031  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026e   0x00000000   Code   RO        36660    .ARM.Collect$$libinit$$00000032  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0800026e   0x00000002   Code   RO        36661    .ARM.Collect$$libinit$$00000033  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x08000270   0x00000000   Code   RO        36789    .ARM.Collect$$libshutdown$$00000004  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x08000270   0x00000000   Code   RO        36800    .ARM.Collect$$libshutdown$$0000000F  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x08000270   0x00000034   Code   RO        36343    .emb_text           c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rand.o)
+    0x080002a4   0x000000c4   Code   RO          950    .text               BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/TOOLCHAIN_ARM/TARGET_RTOS_M4_M7/irq_cm4f.o
+    0x08000368   0x0000005c   Code   RO        29498    .text               BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/TOOLCHAIN_ARM/except.o
+    0x080003c4   0x00000024   Code   RO        35421    .text               BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/TOOLCHAIN_ARM/startup_stm32l475xx.o
+    0x080003e8   0x00000002   Code   RO        36188    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi_2.o)
+    0x080003ea   0x00000002   PAD
+    0x080003ec   0x00000010   Code   RO        36190    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_ctype_table.o)
+    0x080003fc   0x00000004   Code   RO        36197    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_errno_addr_twolibspace.o)
+    0x08000400   0x000000a6   Code   RO        36213    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_alloc_threads.o)
+    0x080004a6   0x00000076   Code   RO        36215    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_free_threads.o)
+    0x0800051c   0x000000f0   Code   RO        36269    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lludivv7m.o)
+    0x0800060c   0x00000074   Code   RO        36271    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(llsdiv.o)
+    0x08000680   0x00000034   Code   RO        36277    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(vsscanf.o)
+    0x080006b4   0x0000003c   Code   RO        36279    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__0sscanf.o)
+    0x080006f0   0x0000014c   Code   RO        36281    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf_int.o)
+    0x0800083c   0x000000e0   Code   RO        36283    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf_str.o)
+    0x0800091c   0x000000f8   Code   RO        36307    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fseek.o)
+    0x08000a14   0x00000042   Code   RO        36309    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(ftell.o)
+    0x08000a56   0x0000004c   Code   RO        36327    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fclose.o)
+    0x08000aa2   0x00000024   Code   RO        36331    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc_locked.o)
+    0x08000ac6   0x00000002   PAD
+    0x08000ac8   0x00000090   Code   RO        36339    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fflush_locked.o)
+    0x08000b58   0x0000014c   Code   RO        36341    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fopen_locked.o)
+    0x08000ca4   0x0000003c   Code   RO        36344    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rand.o)
+    0x08000ce0   0x0000000c   Code   RO        36350    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strtok.o)
+    0x08000cec   0x00000020   Code   RO        36355    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcspn.o)
+    0x08000d0c   0x0000001c   Code   RO        36359    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strspn.o)
+    0x08000d28   0x00000024   Code   RO        36361    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strstr.o)
+    0x08000d4c   0x00000058   Code   RO        36363    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(memcmp.o)
+    0x08000da4   0x00000048   Code   RO        36365    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcpy.o)
+    0x08000dec   0x0000003e   Code   RO        36369    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strlen.o)
+    0x08000e2a   0x00000096   Code   RO        36373    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strncmp.o)
+    0x08000ec0   0x0000008a   Code   RO        36377    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_v6.o)
+    0x08000f4a   0x00000084   Code   RO        36379    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memmove_v6.o)
+    0x08000fce   0x00000064   Code   RO        36381    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_w.o)
+    0x08001032   0x0000007a   Code   RO        36383    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memmove_w.o)
+    0x080010ac   0x00000010   Code   RO        36387    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(aeabi_memset.o)
+    0x080010bc   0x00000010   Code   RO        36389    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(aeabi_memset4.o)
+    0x080010cc   0x00000044   Code   RO        36391    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr.o)
+    0x08001110   0x0000004e   Code   RO        36393    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr_w.o)
+    0x0800115e   0x00000056   Code   RO        36395    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strncpy.o)
+    0x080011b4   0x00000004   PAD
+    0x080011b8   0x0000007c   Code   RO        36397    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcmpv7em.o)
+    0x08001234   0x00000006   Code   RO        36402    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(heapauxi.o)
+    0x0800123a   0x00000002   PAD
+    0x0800123c   0x00000024   Code   RO        36410    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+    0x08001260   0x00000008   Code   RO        36516    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libspace.o)
+    0x08001268   0x00000002   Code   RO        36519    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi.o)
+    0x0800126a   0x0000000a   Code   RO        36530    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_heap_descriptor_twolibspace.o)
+    0x08001274   0x0000000a   Code   RO        36537    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_locale_twolibspace.o)
+    0x0800127e   0x00000004   Code   RO        36539    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(hguard.o)
+    0x08001282   0x0000008a   Code   RO        36541    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_alloc.o)
+    0x0800130c   0x00000012   Code   RO        36549    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_init_threads.o)
+    0x0800131e   0x0000001c   Code   RO        36563    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_chval.o)
+    0x0800133a   0x00000156   Code   RO        36565    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf_longlong.o)
+    0x08001490   0x0000002c   Code   RO        36567    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(scanf_char.o)
+    0x080014bc   0x00000040   Code   RO        36569    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_sgetc.o)
+    0x080014fc   0x000000e8   Code   RO        36577    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf_wctomb.o)
+    0x080015e4   0x000000d0   Code   RO        36579    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf_wstr.o)
+    0x080016b4   0x000001d6   Code   RO        36587    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(flsbuf.o)
+    0x0800188a   0x00000002   PAD
+    0x0800188c   0x000000f0   Code   RO        36591    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio.o)
+    0x0800197c   0x00000068   Code   RO        36600    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(setvbuf_locked.o)
+    0x080019e4   0x000001c8   Code   RO        36602    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(initio_locked.o)
+    0x08001bac   0x00000016   Code   RO        36607    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(abort.o)
+    0x08001bc2   0x00000002   PAD
+    0x08001bc4   0x00000044   Code   RO        36611    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strtok_int.o)
+    0x08001c08   0x00000000   Code   RO        36717    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(maybetermalloc2.o)
+    0x08001c08   0x00000052   Code   RO        36720    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_extend_threads.o)
+    0x08001c5a   0x00000012   Code   RO        36722    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(isspace.o)
+    0x08001c6c   0x00000374   Code   RO        36724    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf.o)
+    0x08001fe0   0x000004f8   Code   RO        36726    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(scanf_fp.o)
+    0x080024d8   0x0000001e   Code   RO        36736    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_scanf_wcharmap.o)
+    0x080024f6   0x00000002   PAD
+    0x080024f8   0x00000040   Code   RO        36752    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(puts_locked.o)
+    0x08002538   0x00000048   Code   RO        36764    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_c16rtomb.o)
+    0x08002580   0x0000000e   Code   RO        36766    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_abrt_outer.o)
+    0x0800258e   0x0000000e   Code   RO        36770    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_outer.o)
+    0x0800259c   0x0000000e   Code   RO        36774    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)
+    0x080025aa   0x00000010   Code   RO        36816    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(term_alloc.o)
+    0x080025ba   0x00000026   Code   RO        36818    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(llshl.o)
+    0x080025e0   0x000000e4   Code   RO        36822    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(bigflt0.o)
+    0x080026c4   0x0000000a   Code   RO        36855    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_exit.o)
+    0x080026ce   0x00000002   PAD
+    0x080026d0   0x00000030   Code   RO        36857    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_abrt_inner.o)
+    0x08002700   0x00000034   Code   RO        36863    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_inner.o)
+    0x08002734   0x00000050   Code   RO        36865    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)
+    0x08002784   0x0000000a   Code   RO        36893    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_final_threads.o)
+    0x0800278e   0x00000016   Code   RO        36895    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_rserrno.o)
+    0x080027a4   0x00000320   Code   RO        36897    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(scanf_hexfp.o)
+    0x08002ac4   0x00000134   Code   RO        36899    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(scanf_infnan.o)
+    0x08002bf8   0x00000032   Code   RO        36905    .text               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_general.o)
+    0x08002c2a   0x00000032   Code   RO        30044    .text.$Sub$$__2printf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002c5c   0x0000002c   Code   RO        30046    .text.$Sub$$__2sprintf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002c88   0x0000001c   Code   RO        30058    .text.$Sub$$__2vfprintf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002ca4   0x0000002e   Code   RO        29858    .text.$Sub$$__rt_lib_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08002cd2   0x00000004   Code   RO        30074    .text.$Sub$$_printf_d  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cd6   0x00000004   Code   RO        30102    .text.$Sub$$_printf_int_dec  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cda   0x00000004   Code   RO        30132    .text.$Sub$$_printf_longlong_hex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cde   0x00000004   Code   RO        30148    .text.$Sub$$_printf_percent  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002ce2   0x00000004   Code   RO        30152    .text.$Sub$$_printf_s  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002ce6   0x00000004   Code   RO        30154    .text.$Sub$$_printf_str  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cea   0x00000004   Code   RO        30160    .text.$Sub$$_printf_truncate_signed  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cee   0x00000004   Code   RO        30162    .text.$Sub$$_printf_truncate_unsigned  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cf2   0x00000004   Code   RO        30164    .text.$Sub$$_printf_u  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cf6   0x00000004   Code   RO        30172    .text.$Sub$$_printf_x  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o
+    0x08002cfa   0x0000001c   Code   RO        30198    .text.$Sub$$vfprintf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_wrapper.o
+    0x08002d16   0x00000014   Code   RO        30194    .text.$Sub$$vsnprintf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_wrapper.o
+    0x08002d2a   0x0000001c   Code   RO        30192    .text.$Sub$$vsprintf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_wrapper.o
+    0x08002d46   0x0000001c   Code   RO           89    .text.BSP_ACCELERO_AccGetXYZ  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.o
+    0x08002d62   0x0000002c   Code   RO           83    .text.BSP_ACCELERO_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.o
+    0x08002d8e   0x00000002   PAD
+    0x08002d90   0x000000a0   Code   RO          684    .text.BufferedPrintfC  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedPrint.o
+    0x08002e30   0x00000006   Code   RO          723    .text.BufferedSpiThunk  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08002e36   0x00000004   Code   RO        35682    .text.CAN1_RX0_IRQHandler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08002e3a   0x00000004   Code   RO        35688    .text.CAN1_SCE_IRQHandler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08002e3e   0x00000004   Code   RO        35686    .text.CAN1_TX_IRQHandler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x08002e42   0x00000070   Code   RO          985    .text.EventFlagsCheck  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08002eb2   0x0000000c   Code   RO         1509    .text.EvrRtxEventFlagsError  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002ebe   0x0000000e   Code   RO         1501    .text.EvrRtxKernelError  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002ecc   0x0000000c   Code   RO         1517    .text.EvrRtxMessageQueueError  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002ed8   0x0000000c   Code   RO         1511    .text.EvrRtxMutexError  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002ee4   0x00000014   Code   RO         1513    .text.EvrRtxSemaphoreError  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002ef8   0x0000000c   Code   RO         1505    .text.EvrRtxThreadError  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002f04   0x0000001a   Code   RO         1519    .text.EvrRtxThreadExit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002f1e   0x00000010   Code   RO         1521    .text.EvrRtxThreadTerminate  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08002f2e   0x00000002   PAD
+    0x08002f30   0x000001c0   Code   RO        32650    .text.HAL_GPIO_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_gpio.o
+    0x080030f0   0x0000009c   Code   RO        35750    .text.HAL_GetTick   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x0800318c   0x0000004a   Code   RO        32869    .text.HAL_I2CEx_ConfigAnalogFilter  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c_ex.o
+    0x080031d6   0x00000034   Code   RO        32722    .text.HAL_I2C_DeInit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800320a   0x000000a0   Code   RO        32718    .text.HAL_I2C_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x080032aa   0x00000002   PAD
+    0x080032ac   0x000001c0   Code   RO        32780    .text.HAL_I2C_Mem_Read  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800346c   0x000001a4   Code   RO        32776    .text.HAL_I2C_Mem_Write  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x08003610   0x0000001c   Code   RO        32038    .text.HAL_Init      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal.o
+    0x0800362c   0x0000000a   Code   RO        35748    .text.HAL_InitTick  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x08003636   0x00000002   PAD
+    0x08003638   0x00000092   Code   RO        33028    .text.HAL_LPTIM_Counter_Start  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_lptim.o
+    0x080036ca   0x000000d0   Code   RO        32976    .text.HAL_LPTIM_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_lptim.o
+    0x0800379a   0x0000001e   Code   RO        32259    .text.HAL_NVIC_EnableIRQ  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o
+    0x080037b8   0x00000056   Code   RO        32257    .text.HAL_NVIC_SetPriority  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o
+    0x0800380e   0x00000020   Code   RO        32255    .text.HAL_NVIC_SetPriorityGrouping  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_cortex.o
+    0x0800382e   0x00000002   PAD
+    0x08003830   0x0000004c   Code   RO        33430    .text.HAL_PWREx_DisableLowPowerRunMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x0800387c   0x00000012   Code   RO        33428    .text.HAL_PWREx_EnableLowPowerRunMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x0800388e   0x00000012   Code   RO        33384    .text.HAL_PWREx_EnableVddIO2  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x080038a0   0x0000003c   Code   RO        33436    .text.HAL_PWREx_EnterSTOP2Mode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x080038dc   0x00000010   Code   RO        33372    .text.HAL_PWREx_GetVoltageRange  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr_ex.o
+    0x080038ec   0x00000012   Code   RO        33340    .text.HAL_PWR_EnableBkUpAccess  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr.o
+    0x080038fe   0x0000004a   Code   RO        33354    .text.HAL_PWR_EnterSLEEPMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_pwr.o
+    0x08003948   0x00000012   Code   RO        33604    .text.HAL_RCCEx_EnableMSIPLLMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x0800395a   0x00000002   PAD
+    0x0800395c   0x00000352   Code   RO        33566    .text.HAL_RCCEx_PeriphCLKConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x08003cae   0x00000002   PAD
+    0x08003cb0   0x00000160   Code   RO        33544    .text.HAL_RCC_ClockConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08003e10   0x00000042   Code   RO        33556    .text.HAL_RCC_GetClockConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08003e52   0x000000c8   Code   RO        33554    .text.HAL_RCC_GetOscConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08003f1a   0x0000002a   Code   RO        33550    .text.HAL_RCC_GetPCLK1Freq  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08003f44   0x0000002a   Code   RO        33552    .text.HAL_RCC_GetPCLK2Freq  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08003f6e   0x000000b6   Code   RO        33542    .text.HAL_RCC_GetSysClockFreq  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08004024   0x000005ac   Code   RO        33538    .text.HAL_RCC_OscConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x080045d0   0x0000010c   Code   RO        34081    .text.HAL_SPI_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x080046dc   0x00000244   Code   RO        34093    .text.HAL_SPI_Receive  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x08004920   0x000001dc   Code   RO        34089    .text.HAL_SPI_Transmit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x08004afc   0x0000035e   Code   RO        34095    .text.HAL_SPI_TransmitReceive  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x08004e5a   0x00000060   Code   RO        34333    .text.HAL_TIM_OC_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o
+    0x08004eba   0x00000002   PAD
+    0x08004ebc   0x000001a2   Code   RO        34341    .text.HAL_TIM_OC_Start  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o
+    0x0800505e   0x00000020   Code   RO        34798    .text.HAL_UARTEx_DisableClockStopMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o
+    0x0800507e   0x00000020   Code   RO        34806    .text.HAL_UARTEx_DisableStopMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o
+    0x0800509e   0x00000020   Code   RO        34804    .text.HAL_UARTEx_EnableStopMode  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart_ex.o
+    0x080050be   0x00000060   Code   RO        34663    .text.HAL_UART_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x0800511e   0x00000002   PAD
+    0x08005120   0x0000008e   Code   RO        32864    .text.I2C_IsAcknowledgeFailed  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x080051ae   0x00000080   Code   RO        32782    .text.I2C_RequestMemoryRead  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800522e   0x00000080   Code   RO        32778    .text.I2C_RequestMemoryWrite  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x080052ae   0x00000002   PAD
+    0x080052b0   0x00000074   Code   RO        32728    .text.I2C_WaitOnFlagUntilTimeout  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x08005324   0x00000048   Code   RO        32732    .text.I2C_WaitOnSTOPFlagUntilTimeout  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x0800536c   0x00000058   Code   RO        32730    .text.I2C_WaitOnTXISFlagUntilTimeout  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_i2c.o
+    0x080053c4   0x000000c8   Code   RO           29    .text.I2Cx_Init     BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x0800548c   0x0000003e   Code   RO           41    .text.I2Cx_ReadMultiple  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x080054ca   0x00000042   Code   RO           37    .text.I2Cx_WriteMultiple  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x0800550c   0x0000015a   Code   RO        35859    .text.LPTIM_IRQHandler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08005666   0x0000001a   Code   RO          222    .text.LSM6DSL_AccDeInit  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08005680   0x00000038   Code   RO          220    .text.LSM6DSL_AccInit  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x080056b8   0x0000002a   Code   RO          226    .text.LSM6DSL_AccLowPower  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x080056e2   0x00000012   Code   RO          224    .text.LSM6DSL_AccReadID  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x080056f4   0x0000007c   Code   RO          228    .text.LSM6DSL_AccReadXYZ  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x08005770   0x00000042   Code   RO         1191    .text.MessageQueueGet  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x080057b2   0x00000002   PAD
+    0x080057b4   0x00000060   Code   RO         1185    .text.MessageQueuePut  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08005814   0x0000000e   Code   RO         1535    .text.OS_Tick_AcknowledgeIRQ  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08005822   0x0000000e   Code   RO         1533    .text.OS_Tick_Disable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08005830   0x0000000e   Code   RO         1531    .text.OS_Tick_Enable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x0800583e   0x00000008   Code   RO         1539    .text.OS_Tick_GetIRQn  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08005846   0x00000002   PAD
+    0x08005848   0x000000c4   Code   RO         1529    .text.OS_Tick_Setup  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x0800590c   0x00000076   Code   RO          750    .text.ParseNumber   BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x08005982   0x00000002   PAD
+    0x08005984   0x000000a4   Code   RO          776    .text.ParseSecurity  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x08005a28   0x0000015e   Code   RO        33568    .text.RCCEx_PLLSAI1_Config  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x08005b86   0x00000002   PAD
+    0x08005b88   0x00000132   Code   RO        33570    .text.RCCEx_PLLSAI2_Config  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
+    0x08005cba   0x0000008a   Code   RO        33540    .text.RCC_SetFlashLatencyFromMSIRange  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
+    0x08005d44   0x00000004   Code   RO           27    .text.SENSOR_IO_Init  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x08005d48   0x0000001c   Code   RO           39    .text.SENSOR_IO_Read  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x08005d64   0x00000008   Code   RO           43    .text.SENSOR_IO_ReadMultiple  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x08005d6c   0x00000016   Code   RO           35    .text.SENSOR_IO_Write  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x08005d82   0x0000007c   Code   RO        34099    .text.SPI_EndRxTransaction  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x08005dfe   0x0000004e   Code   RO        34091    .text.SPI_EndRxTxTransaction  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x08005e4c   0x000000e2   Code   RO        34149    .text.SPI_WaitFifoStateUntilTimeout  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x08005f2e   0x00000002   PAD
+    0x08005f30   0x000000da   Code   RO        34097    .text.SPI_WaitFlagStateUntilTimeout  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_spi.o
+    0x0800600a   0x00000002   PAD
+    0x0800600c   0x00000024   Code   RO        35424    .text.SetSysClock   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/system_clock.o
+    0x08006030   0x00000096   Code   RO        35426    .text.SetSysClock_PLL_MSI  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/system_clock.o
+    0x080060c6   0x00000002   PAD
+    0x080060c8   0x0000018c   Code   RO        35701    .text.Set_GPIO_Clock  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x08006254   0x000000b4   Code   RO        35388    .text.SystemCoreClockUpdate  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x08006308   0x00000052   Code   RO        35386    .text.SystemInit    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x0800635a   0x0000011a   Code   RO        34309    .text.TIM_Base_SetConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_tim.o
+    0x08006474   0x00000070   Code   RO         1345    .text.ThreadFlagsCheck  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080064e4   0x00000056   Code   RO         1405    .text.TimerInsert   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x0800653a   0x000000cc   Code   RO        34669    .text.UART_AdvFeatureConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x08006606   0x00000068   Code   RO        34671    .text.UART_CheckIdleState  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x0800666e   0x00000002   PAD
+    0x08006670   0x00000228   Code   RO        34667    .text.UART_SetConfig  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x08006898   0x000000ae   Code   RO        34685    .text.UART_WaitOnFlagUntilTimeout  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x08006946   0x0000001e   Code   RO        30523    .text._GLOBAL__sub_I_QSPIFBlockDevice.cpp  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/storage/blockdevice/COMPONENT_QSPIF/source/QSPIFBlockDevice.o
+    0x08006964   0x00000028   Code   RO        25683    .text._Z15nsapi_dns_queryP12NetworkStackPKcP13SocketAddressS2_13nsapi_version  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800698c   0x0000007e   Code   RO        25695    .text._Z17nsapi_dns_call_inN4mbed8CallbackIFiiNS0_IFvvEEEEEEiS2_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08006a0a   0x00000036   Code   RO        25689    .text._Z21nsapi_dns_query_asyncP12NetworkStackPKcN4mbed8CallbackIFviP13SocketAddressEEENS4_IFiiNS4_IFvvEEEEEES2_13nsapi_version  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08006a40   0x00000080   Code   RO        25677    .text._Z24nsapi_dns_query_multipleP12NetworkStackPKcP13SocketAddressjS2_13nsapi_version  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08006ac0   0x00000062   Code   RO        25703    .text._Z28nsapi_dns_query_async_canceli  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08006b22   0x00000002   PAD
+    0x08006b24   0x0000039e   Code   RO        25687    .text._Z30nsapi_dns_query_multiple_asyncP12NetworkStackPKcN4mbed8CallbackIFviP13SocketAddressEEEjNS4_IFiiNS4_IFvvEEEEEES2_13nsapi_version  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08006ec2   0x00000002   PAD
+    0x08006ec4   0x00000064   Code   RO         1549    .text._ZL17default_idle_hookv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08006f28   0x00000134   Code   RO        25709    .text._ZL17dns_scan_responsePKhtPNSt3__26chrono8durationIjNS1_5ratioILx1ELx1EEEEEP10nsapi_addrj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800705c   0x00000054   Code   RO        29812    .text._ZL18reserve_filehandlev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080070b0   0x00000012   Code   RO         1553    .text._ZL18rtos_event_pendingPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x080070c2   0x00000002   PAD
+    0x080070c4   0x00000088   Code   RO        25707    .text._ZL19dns_append_questionPhtPKc13nsapi_version  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800714c   0x0000013e   Code   RO        25711    .text._ZL19nsapi_dns_cache_addPKcP10nsapi_addrNSt3__26chrono8durationIjNS3_5ratioILx1ELx1EEEEEh  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800728a   0x00000002   PAD
+    0x0800728c   0x000000e6   Code   RO        25697    .text._ZL20nsapi_dns_cache_findPKc13nsapi_versionP10nsapi_addr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007372   0x00000002   PAD
+    0x08007374   0x0000022e   Code   RO        25675    .text._ZL24nsapi_dns_query_multipleP12NetworkStackPKcP10nsapi_addrjS2_13nsapi_version  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x080075a2   0x0000005e   Code   RO        25705    .text._ZL25nsapi_dns_get_server_addrP12NetworkStackPhS1_S1_P13SocketAddressPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007600   0x00000042   Code   RO        25715    .text._ZL26nsapi_dns_query_async_respP9DNS_QUERYiP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007642   0x00000002   PAD
+    0x08007644   0x00000202   Code   RO        25719    .text._ZL26nsapi_dns_query_async_sendPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007846   0x00000002   PAD
+    0x08007848   0x00000160   Code   RO        25713    .text._ZL28nsapi_dns_query_async_createPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x080079a8   0x00000086   Code   RO        25721    .text._ZL28nsapi_dns_query_async_deletei  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007a2e   0x00000002   PAD
+    0x08007a30   0x00000120   Code   RO        25699    .text._ZL29nsapi_dns_query_async_timeoutv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007b50   0x0000012c   Code   RO        25725    .text._ZL30nsapi_dns_query_async_responsePv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007c7c   0x00000076   Code   RO        25701    .text._ZL35nsapi_dns_query_async_initiate_nextv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007cf2   0x0000003c   Code   RO        25717    .text._ZL37nsapi_dns_query_async_socket_callbackPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007d2e   0x00000002   PAD
+    0x08007d30   0x0000015c   Code   RO        25723    .text._ZL44nsapi_dns_query_async_socket_callback_handleP12NetworkStack  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08007e8c   0x00000026   Code   RO          263    .text._ZL8debug_ifiPKcz  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08007eb2   0x00000026   Code   RO          756    .text._ZL8debug_ifiPKcz  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x08007ed8   0x00000010   Code   RO        29195    .text._ZN10CThunkBase11cthunk_freeEPFvvE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/CThunkBase.o
+    0x08007ee8   0x000000dc   Code   RO        36184    .text._ZN10SocketDemo16resolve_hostnameER13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x08007fc4   0x000000e4   Code   RO        36182    .text._ZN10SocketDemo18print_network_infoEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x080080a8   0x000002bc   Code   RO        36178    .text._ZN10SocketDemo3runEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x08008364   0x00000160   Code   RO        36180    .text._ZN10SocketDemo9wifi_scanEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x080084c4   0x00000080   Code   RO        36176    .text._ZN10SocketDemoC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x08008544   0x0000001e   Code   RO          707    .text._ZN11BufferedSpi10enable_nssEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008562   0x0000001c   Code   RO          705    .text._ZN11BufferedSpi11disable_nssEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x0800857e   0x00000006   Code   RO          717    .text._ZN11BufferedSpi11flush_txbufEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008584   0x00000010   Code   RO          689    .text._ZN11BufferedSpi15DatareadyRisingEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008594   0x0000005c   Code   RO          691    .text._ZN11BufferedSpi21wait_cmddata_rdy_highEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080085f0   0x00000068   Code   RO          693    .text._ZN11BufferedSpi29wait_cmddata_rdy_rising_eventEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008658   0x00000042   Code   RO          713    .text._ZN11BufferedSpi4getcEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x0800869a   0x0000002e   Code   RO          715    .text._ZN11BufferedSpi4putcEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080086c8   0x00000074   Code   RO          719    .text._ZN11BufferedSpi4putsEPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x0800873c   0x000000d6   Code   RO          733    .text._ZN11BufferedSpi4readEj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008812   0x00000008   Code   RO          731    .text._ZN11BufferedSpi4readEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x0800881a   0x00000038   Code   RO          739    .text._ZN11BufferedSpi5sigioEN4mbed8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008852   0x00000002   PAD
+    0x08008854   0x00000082   Code   RO          721    .text._ZN11BufferedSpi5txIrqEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080088d6   0x00000012   Code   RO          735    .text._ZN11BufferedSpi6attachEN4mbed8CallbackIFvvEEENS_7IrqTypeE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080088e8   0x00000004   Code   RO          703    .text._ZN11BufferedSpi6formatEii  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080088ec   0x00000024   Code   RO          725    .text._ZN11BufferedSpi6printfEPKcz  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008910   0x00000034   Code   RO          729    .text._ZN11BufferedSpi8buffsendEj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008944   0x00000010   Code   RO          709    .text._ZN11BufferedSpi8readableEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008954   0x00000086   Code   RO          727    .text._ZN11BufferedSpi9buffwriteEPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080089da   0x00000004   Code   RO          701    .text._ZN11BufferedSpi9frequencyEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080089de   0x00000004   Code   RO          711    .text._ZN11BufferedSpi9writeableEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x080089e2   0x00000002   PAD
+    0x080089e4   0x000000c4   Code   RO          695    .text._ZN11BufferedSpiC2E7PinNameS0_S0_S0_S0_jjPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008aa8   0x0000000e   Code   RO          699    .text._ZN11BufferedSpiD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008ab6   0x00000034   Code   RO          697    .text._ZN11BufferedSpiD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08008aea   0x0000001c   Code   RO        29796    .text._ZN12DirectSerial4readEPvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b06   0x0000000a   Code   RO        29972    .text._ZN12DirectSerial4seekEli  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b10   0x00000006   Code   RO        29978    .text._ZN12DirectSerial4sizeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b16   0x00000004   Code   RO        29974    .text._ZN12DirectSerial5closeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b1a   0x00000002   PAD
+    0x08008b1c   0x00000028   Code   RO        29794    .text._ZN12DirectSerial5writeEPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b44   0x00000004   Code   RO        29976    .text._ZN12DirectSerial6isattyEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b48   0x0000003a   Code   RO        29792    .text._ZN12DirectSerialC2ERK15serial_pinmap_ti  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b82   0x00000004   Code   RO        29970    .text._ZN12DirectSerialD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08008b86   0x0000000a   Code   RO        25374    .text._ZN12NetworkStack10getsockoptEPviiS0_Pj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008b90   0x0000000a   Code   RO        25372    .text._ZN12NetworkStack10setsockoptEPviiPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008b9a   0x00000002   PAD
+    0x08008b9c   0x00000162   Code   RO        25356    .text._ZN12NetworkStack11getaddrinfoEPKcP13SocketAddressPS3_S1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008cfe   0x0000000a   Code   RO        25370    .text._ZN12NetworkStack11getstackoptEiiPvPj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008d08   0x0000000a   Code   RO        25368    .text._ZN12NetworkStack11setstackoptEiiPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008d12   0x00000086   Code   RO        25354    .text._ZN12NetworkStack13gethostbynameEPKcP13SocketAddress13nsapi_versionS1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008d98   0x00000020   Code   RO        25364    .text._ZN12NetworkStack14add_dns_serverERK13SocketAddressPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008db8   0x0000000a   Code   RO        25366    .text._ZN12NetworkStack14get_dns_serverEiP13SocketAddressPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008dc2   0x0000000a   Code   RO        25352    .text._ZN12NetworkStack17get_ip_address_ifEP13SocketAddressPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008dcc   0x00000092   Code   RO        25360    .text._ZN12NetworkStack17getaddrinfo_asyncEPKcP13SocketAddressN4mbed8CallbackIFviS3_EEES1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008e5e   0x000000fa   Code   RO        25358    .text._ZN12NetworkStack19gethostbyname_asyncEPKcN4mbed8CallbackIFviP13SocketAddressEEE13nsapi_versionS1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008f58   0x00000004   Code   RO          393    .text._ZN12NetworkStack19onboardNetworkStackEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08008f5c   0x00000016   Code   RO        25378    .text._ZN12NetworkStack20get_call_in_callbackEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008f72   0x00000006   Code   RO        25362    .text._ZN12NetworkStack26gethostbyname_async_cancelEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008f78   0x0000000a   Code   RO        25350    .text._ZN12NetworkStack27get_ipv6_link_local_addressEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08008f82   0x00000090   Code   RO        25376    .text._ZN12NetworkStack7call_inEiN4mbed8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x08009012   0x00000054   Code   RO        25509    .text._ZN13SocketAddress14set_ip_addressEPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x08009066   0x00000020   Code   RO        25517    .text._ZN13SocketAddress8set_addrERK10nsapi_addr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x08009086   0x0000001c   Code   RO        25507    .text._ZN13SocketAddressC2EPKct  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x080090a2   0x00000018   Code   RO        25505    .text._ZN13SocketAddressC2ERK10nsapi_addrt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x080090ba   0x00000020   Code   RO        25515    .text._ZN13SocketAddressC2ERKS_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x080090da   0x0000002a   Code   RO        25523    .text._ZN13SocketAddressaSERKS_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x08009104   0x00000002   Code   RO          381    .text._ZN13WiFiInterface13wifiInterfaceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009106   0x0000004c   Code   RO          363    .text._ZN13WiFiInterface20get_default_instanceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009152   0x0000001a   Code   RO        25334    .text._ZN13WiFiInterface22set_default_parametersEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterfaceDefaults.o
+    0x0800916c   0x0000004c   Code   RO        25240    .text._ZN14InternetSocket10getsockoptEiiPvPj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x080091b8   0x00000066   Code   RO        25238    .text._ZN14InternetSocket10setsockoptEiiPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x0800921e   0x0000002e   Code   RO        25244    .text._ZN14InternetSocket11getpeernameEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x0800924c   0x00000020   Code   RO        25236    .text._ZN14InternetSocket11set_timeoutEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x0800926c   0x00000008   Code   RO        25234    .text._ZN14InternetSocket12set_blockingEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08009274   0x00000034   Code   RO        25232    .text._ZN14InternetSocket4bindERK13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x080092a8   0x0000008c   Code   RO        25214    .text._ZN14InternetSocket4openEP12NetworkStack  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08009334   0x000000a4   Code   RO        25218    .text._ZN14InternetSocket5closeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x080093d8   0x00000050   Code   RO        25216    .text._ZN14InternetSocket5eventEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08009428   0x00000022   Code   RO        25242    .text._ZN14InternetSocket5sigioEN4mbed8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x0800944a   0x00000046   Code   RO        25208    .text._ZN14InternetSocketC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08009490   0x00000002   Code   RO        25212    .text._ZN14InternetSocketD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08009492   0x00000036   Code   RO        25210    .text._ZN14InternetSocketD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x080094c8   0x00000036   Code   RO        25657    .text._ZN15WiFiAccessPointC2E13nsapi_wifi_ap  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/WiFiAccessPoint.o
+    0x080094fe   0x0000000e   Code   RO        25655    .text._ZN15WiFiAccessPointC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/WiFiAccessPoint.o
+    0x0800950c   0x0000000a   Code   RO        25272    .text._ZN16NetworkInterface11get_gatewayEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009516   0x0000000a   Code   RO        25270    .text._ZN16NetworkInterface11get_netmaskEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009520   0x00000020   Code   RO        25282    .text._ZN16NetworkInterface11getaddrinfoEPKcP13SocketAddressPS3_S1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009540   0x0000000a   Code   RO        25276    .text._ZN16NetworkInterface11set_networkERK13SocketAddressS2_S2_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x0800954a   0x00000004   Code   RO          379    .text._ZN16NetworkInterface12ethInterfaceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800954e   0x0000000a   Code   RO        25310    .text._ZN16NetworkInterface12set_blockingEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009558   0x00000004   Code   RO          385    .text._ZN16NetworkInterface13emacInterfaceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800955c   0x00000020   Code   RO        25280    .text._ZN16NetworkInterface13gethostbynameEPKcP13SocketAddress13nsapi_versionS1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x0800957c   0x00000004   Code   RO          383    .text._ZN16NetworkInterface13meshInterfaceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009580   0x00000004   Code   RO         7318    .text._ZN16NetworkInterface13wifiInterfaceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/cellular/source/framework/AT/AT_CellularContext.o
+    0x08009584   0x0000001a   Code   RO        25290    .text._ZN16NetworkInterface14add_dns_serverERK13SocketAddressPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x0800959e   0x00000020   Code   RO        25292    .text._ZN16NetworkInterface14get_dns_serverEiP13SocketAddressPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080095be   0x0000000a   Code   RO        25266    .text._ZN16NetworkInterface14get_ip_addressEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080095c8   0x00000002   Code   RO        25260    .text._ZN16NetworkInterface14set_as_defaultEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080095ca   0x00000004   Code   RO        25262    .text._ZN16NetworkInterface15get_mac_addressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080095ce   0x0000000a   Code   RO        25264    .text._ZN16NetworkInterface15set_mac_addressEPhj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080095d8   0x00000004   Code   RO          387    .text._ZN16NetworkInterface17cellularInterfaceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x080095dc   0x0000003c   Code   RO        25286    .text._ZN16NetworkInterface17getaddrinfo_asyncEPKcP13SocketAddressN4mbed8CallbackIFviS3_EEES1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009618   0x00000004   Code   RO        25274    .text._ZN16NetworkInterface18get_interface_nameEPc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x0800961c   0x0000003c   Code   RO        25284    .text._ZN16NetworkInterface19gethostbyname_asyncEPKcN4mbed8CallbackIFviP13SocketAddressEEE13nsapi_versionS1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009658   0x00000004   Code   RO        25328    .text._ZN16NetworkInterface20get_default_instanceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterfaceDefaults.o
+    0x0800965c   0x00000002   Code   RO        25332    .text._ZN16NetworkInterface22set_default_parametersEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterfaceDefaults.o
+    0x0800965e   0x00000016   Code   RO        25288    .text._ZN16NetworkInterface26gethostbyname_async_cancelEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009674   0x0000000a   Code   RO        25268    .text._ZN16NetworkInterface27get_ipv6_link_local_addressEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x0800967e   0x00000020   Code   RO        25330    .text._ZN16NetworkInterface27get_target_default_instanceEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterfaceDefaults.o
+    0x0800969e   0x00000002   Code   RO        25294    .text._ZN16NetworkInterface6attachEN4mbed8CallbackIFv11nsapi_eventiEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080096a0   0x00000010   Code   RO        25278    .text._ZN16NetworkInterface8set_dhcpEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080096b0   0x00000002   Code   RO        25306    .text._ZN16NetworkInterfaceD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x080096b2   0x00000002   PAD
+    0x080096b4   0x00000054   Code   RO        25304    .text._ZN16NetworkInterfaceD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08009708   0x00000042   Code   RO          285    .text._ZN17ISM43362Interface10disconnectEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800974a   0x00000044   Code   RO          303    .text._ZN17ISM43362Interface11get_gatewayEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800978e   0x00000022   Code   RO          301    .text._ZN17ISM43362Interface11get_gatewayEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x080097b0   0x00000044   Code   RO          309    .text._ZN17ISM43362Interface11get_netmaskEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x080097f4   0x00000022   Code   RO          307    .text._ZN17ISM43362Interface11get_netmaskEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009816   0x0000000a   Code   RO          281    .text._ZN17ISM43362Interface11set_channelEh  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009820   0x0000000a   Code   RO          329    .text._ZN17ISM43362Interface11socket_bindEPvRK13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800982a   0x00000002   PAD
+    0x0800982c   0x000000e0   Code   RO          325    .text._ZN17ISM43362Interface11socket_openEPPv14nsapi_protocol  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800990c   0x00000168   Code   RO          345    .text._ZN17ISM43362Interface11socket_recvEPvS0_j  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009a74   0x00000030   Code   RO          341    .text._ZN17ISM43362Interface11socket_sendEPvPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009aa4   0x00000090   Code   RO          327    .text._ZN17ISM43362Interface12socket_closeEPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009b34   0x0000000a   Code   RO          339    .text._ZN17ISM43362Interface13socket_acceptEPvPS0_P13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009b3e   0x00000002   PAD
+    0x08009b40   0x00000064   Code   RO          351    .text._ZN17ISM43362Interface13socket_attachEPvPFvS0_ES0_  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009ba4   0x0000000a   Code   RO          331    .text._ZN17ISM43362Interface13socket_listenEPvi  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009bae   0x00000002   PAD
+    0x08009bb0   0x000000c0   Code   RO          347    .text._ZN17ISM43362Interface13socket_sendtoEPvRK13SocketAddressPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009c70   0x00000044   Code   RO          293    .text._ZN17ISM43362Interface14get_ip_addressEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009cb4   0x00000022   Code   RO          291    .text._ZN17ISM43362Interface14get_ip_addressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009cd6   0x0000002c   Code   RO          333    .text._ZN17ISM43362Interface14socket_connectEPvRK13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009d02   0x00000022   Code   RO          297    .text._ZN17ISM43362Interface15get_mac_addressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009d24   0x0000008a   Code   RO          277    .text._ZN17ISM43362Interface15set_credentialsEPKcS1_14nsapi_security  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009dae   0x00000044   Code   RO          349    .text._ZN17ISM43362Interface15socket_recvfromEPvP13SocketAddressS0_j  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009df2   0x00000002   PAD
+    0x08009df4   0x00000110   Code   RO          337    .text._ZN17ISM43362Interface17socket_check_readEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009f04   0x0000000e   Code   RO          313    .text._ZN17ISM43362Interface18get_interface_nameEPc  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009f12   0x00000002   PAD
+    0x08009f14   0x000000b8   Code   RO          343    .text._ZN17ISM43362Interface18socket_send_nolockEPvPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08009fcc   0x00000084   Code   RO          261    .text._ZN17ISM43362Interface20update_conn_state_cbEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a050   0x00000068   Code   RO          335    .text._ZN17ISM43362Interface21socket_connect_nolockEPvRK13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a0b8   0x0000002e   Code   RO          321    .text._ZN17ISM43362Interface4scanEP15WiFiAccessPointj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a0e6   0x00000002   PAD
+    0x0800a0e8   0x00000060   Code   RO          355    .text._ZN17ISM43362Interface6attachEN4mbed8CallbackIFv11nsapi_eventiEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a148   0x0000002c   Code   RO          267    .text._ZN17ISM43362Interface7connectEPKcS1_14nsapi_securityh  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a174   0x000000b4   Code   RO          271    .text._ZN17ISM43362Interface7connectEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a228   0x00000022   Code   RO          317    .text._ZN17ISM43362Interface8get_rssiEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a24a   0x00000002   Code   RO          395    .text._ZN17ISM43362Interface9get_stackEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a24c   0x0000015c   Code   RO          265    .text._ZN17ISM43362InterfaceC1Eb  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a3a8   0x0000004e   Code   RO          391    .text._ZN17ISM43362InterfaceD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a3f6   0x00000048   Code   RO          389    .text._ZN17ISM43362InterfaceD1Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800a43e   0x00000016   Code   RO        25197    .text._ZN22InternetDatagramSocket4recvEPvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a454   0x00000038   Code   RO        25193    .text._ZN22InternetDatagramSocket4sendEPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a48c   0x00000010   Code   RO        25199    .text._ZN22InternetDatagramSocket6acceptEPi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a49c   0x0000000a   Code   RO        25201    .text._ZN22InternetDatagramSocket6listenEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a4a6   0x00000002   PAD
+    0x0800a4a8   0x000000b6   Code   RO        25191    .text._ZN22InternetDatagramSocket6sendtoERK13SocketAddressPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a55e   0x0000000c   Code   RO        25189    .text._ZN22InternetDatagramSocket7connectERK13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a56a   0x00000002   PAD
+    0x0800a56c   0x000000f8   Code   RO        25195    .text._ZN22InternetDatagramSocket8recvfromEP13SocketAddressPvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetDatagramSocket.o
+    0x0800a664   0x00000006   Code   RO        27913    .text._ZN4mbed10FileHandle12enable_inputEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/usb/source/USBKeyboard.o
+    0x0800a66a   0x00000010   Code   RO        27217    .text._ZN4mbed10FileHandle12set_blockingEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x0800a67a   0x00000006   Code   RO        27915    .text._ZN4mbed10FileHandle13enable_outputEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/usb/source/USBKeyboard.o
+    0x0800a680   0x00000004   Code   RO        27211    .text._ZN4mbed10FileHandle4syncEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x0800a684   0x0000000a   Code   RO        26489    .text._ZN4mbed10FileHandle4tellEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800a68e   0x00000002   Code   RO        27221    .text._ZN4mbed10FileHandle5sigioENS_8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x0800a690   0x0000000a   Code   RO        26491    .text._ZN4mbed10FileHandle6rewindEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800a69a   0x00000006   Code   RO        26493    .text._ZN4mbed10FileHandle8truncateEl  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/BufferedSerial.o
+    0x0800a6a0   0x00000002   Code   RO        29265    .text._ZN4mbed10FileHandleD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FileHandle.o
+    0x0800a6a2   0x00000018   Code   RO        27156    .text._ZN4mbed10TimerEvent15insert_absoluteENSt3__26chrono10time_pointINS_15TickerDataClockENS2_8durationIxNS1_5ratioILx1ELx1000000EEEEEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x0800a6ba   0x00000006   Code   RO        27146    .text._ZN4mbed10TimerEvent3irqEj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x0800a6c0   0x0000000c   Code   RO        27150    .text._ZN4mbed10TimerEvent6removeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x0800a6cc   0x00000030   Code   RO        27144    .text._ZN4mbed10TimerEventC2EPK13ticker_data_t  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x0800a6fc   0x0000001e   Code   RO        26747    .text._ZN4mbed11InterruptIn12_irq_handlerEj14gpio_irq_event  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x0800a71a   0x00000038   Code   RO        26759    .text._ZN4mbed11InterruptIn4fallENS_8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x0800a752   0x00000038   Code   RO        26757    .text._ZN4mbed11InterruptIn4riseENS_8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x0800a78a   0x00000048   Code   RO        26741    .text._ZN4mbed11InterruptInC2E7PinName  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x0800a7d2   0x00000024   Code   RO        26751    .text._ZN4mbed11InterruptInD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x0800a7f6   0x0000001e   Code   RO        26749    .text._ZN4mbed11InterruptInD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x0800a814   0x0000001c   Code   RO        28333    .text._ZN4mbed16mbed_event_queueEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x0800a830   0x0000008e   Code   RO        29808    .text._ZN4mbed16mbed_file_handleEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800a8be   0x0000000c   Code   RO        29219    .text._ZN4mbed19CriticalSectionLockC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/CriticalSectionLock.o
+    0x0800a8ca   0x0000000c   Code   RO        29221    .text._ZN4mbed19CriticalSectionLockD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/CriticalSectionLock.o
+    0x0800a8d6   0x000000fa   Code   RO        28339    .text._ZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x0800a9d0   0x0000007c   Code   RO        26896    .text._ZN4mbed3SPI13_do_constructEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800aa4c   0x00000012   Code   RO        26930    .text._ZN4mbed3SPI4lockEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800aa5e   0x00000060   Code   RO        26926    .text._ZN4mbed3SPI5writeEPKciPci  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800aabe   0x00000042   Code   RO        26920    .text._ZN4mbed3SPI5writeEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ab00   0x0000003e   Code   RO        26914    .text._ZN4mbed3SPI6formatEii  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ab3e   0x00000034   Code   RO        26922    .text._ZN4mbed3SPI6selectEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ab72   0x00000012   Code   RO        26932    .text._ZN4mbed3SPI6unlockEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ab84   0x00000038   Code   RO        26906    .text._ZN4mbed3SPI7_lookupE7SPIName  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800abbc   0x00000036   Code   RO        26916    .text._ZN4mbed3SPI8_acquireEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800abf2   0x00000028   Code   RO        26894    .text._ZN4mbed3SPI8_do_initEPS0_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ac1a   0x00000036   Code   RO        26918    .text._ZN4mbed3SPI9frequencyEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ac50   0x00000070   Code   RO        26892    .text._ZN4mbed3SPIC2E7PinNameS1_S1_S1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800acc0   0x0000000e   Code   RO        26912    .text._ZN4mbed3SPID0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800acce   0x00000046   Code   RO        26910    .text._ZN4mbed3SPID2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800ad14   0x0000003a   Code   RO        26779    .text._ZN4mbed4impl7MbedCRCILj79764919ELh32ELNS_7CrcModeE2EE7computeEPKvjPj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/MbedCRC.o
+    0x0800ad4e   0x00000022   Code   RO        27138    .text._ZN4mbed5TimerC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800ad70   0x00000026   Code   RO        25428    .text._ZN4mbed8CallbackIFiiNS0_IFvvEEEEE11target_callIZNS4_C1IP12NetworkStackMS7_FiiS2_ELi0EEET_T0_EUliS2_E_EEiPKNS_6detail12CallbackBaseEiS2_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x0800ad96   0x00000004   Code   RO         5386    .text._ZN4mbed8CallbackIFvvEE11target_callIPS1_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/FEATURE_BLE/source/cordio/source/BLEInstanceBaseImpl.o
+    0x0800ad9a   0x00000014   Code   RO          743    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IP11BufferedSpiMS5_FvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x0800adae   0x00000014   Code   RO        25249    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IP14InternetSocketMS5_FvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x0800adc2   0x00000014   Code   RO          405    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IP17ISM43362InterfaceMS5_FvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800add6   0x00000014   Code   RO          889    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IP6HCSR04MS5_FvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/HCSR04/hcsr04.o
+    0x0800adea   0x00000014   Code   RO        25557    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IP9TCPSocketM14InternetSocketFvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800adfe   0x00000008   Code   RO        25744    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IPFvP12NetworkStackES6_Li0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800ae06   0x00000008   Code   RO        25742    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IPFvPvEP14SOCKET_CB_DATALi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800ae0e   0x00000008   Code   RO        25740    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IPFvPvES5_Li0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800ae16   0x00000014   Code   RO         7911    .text._ZN4mbed8CallbackIFvvEE11target_callIZNS2_C1IPN6events10EventQueueEMS6_FvvELi0EEET_T0_EUlvE_EEvPKNS_6detail12CallbackBaseE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/cellular/source/framework/device/CellularDevice.o
+    0x0800ae2a   0x00000024   Code   RO        25070    .text._ZN4mbed8CallbackIFvvEE5thunkEPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/CellularNonIPSocket.o
+    0x0800ae4e   0x00000002   PAD
+    0x0800ae50   0x000000a4   Code   RO        29249    .text._ZN4mbed8FileBase6lookupEPKcj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x0800aef4   0x0000001e   Code   RO        29278    .text._ZN4mbed8FilePath10fileSystemEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x0800af12   0x0000001c   Code   RO        29282    .text._ZN4mbed8FilePath4fileEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x0800af2e   0x0000000a   Code   RO        29284    .text._ZN4mbed8FilePath6existsEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x0800af38   0x00000016   Code   RO        29280    .text._ZN4mbed8FilePath6isFileEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x0800af4e   0x00000002   PAD
+    0x0800af50   0x00000080   Code   RO        29272    .text._ZN4mbed8FilePathC2EPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FilePath.o
+    0x0800afd0   0x00000026   Code   RO        29751    .text._ZN4mbed8internal13init_os_timerEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x0800aff6   0x00000002   PAD
+    0x0800aff8   0x00000080   Code   RO        29760    .text._ZN4mbed8internal18do_sleep_operationINS0_18timed_predicate_opEEEvRT_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x0800b078   0x0000003e   Code   RO        29753    .text._ZN4mbed8internal23do_timed_sleep_absoluteENSt3__26chrono10time_pointINS0_7OsClockENS2_8durationIxNS1_5ratioILx1ELx1000EEEEEEEPFbPvESA_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x0800b0b6   0x00000040   Code   RO        29755    .text._ZN4mbed8internal45do_timed_sleep_relative_to_acknowledged_ticksENSt3__26chrono8durationIjNS1_5ratioILx1ELx1000EEEEEPFbPvES7_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x0800b0f6   0x00000028   Code   RO        29379    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE10start_tickEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b11e   0x0000001e   Code   RO        29363    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE11cancel_tickEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b13c   0x0000003e   Code   RO        29365    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE11cancel_wakeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b17a   0x000000da   Code   RO        29369    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE13set_wake_timeENS2_6chrono10time_pointIS5_NS6_8durationIyS4_EEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b254   0x00000024   Code   RO        29385    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE16acknowledge_tickEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b278   0x0000006c   Code   RO        29371    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE19update_and_get_tickEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b2e4   0x00000062   Code   RO        29399    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE7handlerEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b346   0x00000032   Code   RO        29359    .text._ZN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EEC2EPK13ticker_data_t  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800b378   0x0000003e   Code   RO        27122    .text._ZN4mbed9TimerBase4stopEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800b3b6   0x00000026   Code   RO        27112    .text._ZN4mbed9TimerBase5resetEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800b3dc   0x00000030   Code   RO        27120    .text._ZN4mbed9TimerBase5startEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800b40c   0x00000014   Code   RO        27118    .text._ZN4mbed9TimerBaseD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800b420   0x00000058   Code   RO        30231    .text._ZN4rtos10EventFlags11constructorEPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/EventFlags.o
+    0x0800b478   0x00000006   Code   RO        30235    .text._ZN4rtos10EventFlags3setEj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/EventFlags.o
+    0x0800b47e   0x00000012   Code   RO        30251    .text._ZN4rtos10EventFlags8wait_anyEjjb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/EventFlags.o
+    0x0800b490   0x0000000c   Code   RO        30233    .text._ZN4rtos10EventFlagsC2EPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/EventFlags.o
+    0x0800b49c   0x00000030   Code   RO        30229    .text._ZN4rtos10EventFlagsC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/EventFlags.o
+    0x0800b4cc   0x0000000e   Code   RO        30257    .text._ZN4rtos10EventFlagsD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/EventFlags.o
+    0x0800b4da   0x00000020   Code   RO        30354    .text._ZN4rtos10ThisThread9sleep_forENSt3__26chrono8durationIjNS1_5ratioILx1ELx1000EEEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x0800b4fa   0x00000004   Code   RO        30352    .text._ZN4rtos10ThisThread9sleep_forEj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x0800b4fe   0x00000002   PAD
+    0x0800b500   0x000000a0   Code   RO        30276    .text._ZN4rtos5Mutex11constructorEPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800b5a0   0x00000040   Code   RO        30280    .text._ZN4rtos5Mutex4lockEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800b5e0   0x00000050   Code   RO        30292    .text._ZN4rtos5Mutex6unlockEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800b630   0x0000000e   Code   RO        30274    .text._ZN4rtos5MutexC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800b63e   0x0000000e   Code   RO        30296    .text._ZN4rtos5MutexD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x0800b64c   0x00000034   Code   RO        30263    .text._ZN4rtos6Kernel4impl14get_tick_countEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Kernel.o
+    0x0800b680   0x00000066   Code   RO        30371    .text._ZN4rtos6Thread11constructorE12osPriority_tjPhPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800b6e6   0x00000002   PAD
+    0x0800b6e8   0x000000be   Code   RO        30373    .text._ZN4rtos6Thread5startEN4mbed8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800b7a6   0x00000002   PAD
+    0x0800b7a8   0x00000074   Code   RO        30375    .text._ZN4rtos6Thread6_thunkEPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800b81c   0x00000044   Code   RO        30377    .text._ZN4rtos6Thread9terminateEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800b860   0x0000004c   Code   RO          373    .text._ZN4rtos6ThreadC2E12osPriority_tjPhPKc  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800b8ac   0x0000000e   Code   RO        30403    .text._ZN4rtos6ThreadD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800b8ba   0x0000003c   Code   RO        30401    .text._ZN4rtos6ThreadD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800b8f6   0x00000002   PAD
+    0x0800b8f8   0x00000064   Code   RO        30303    .text._ZN4rtos9Semaphore11constructorEit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x0800b95c   0x00000006   Code   RO        30319    .text._ZN4rtos9Semaphore7releaseEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x0800b962   0x00000010   Code   RO        30301    .text._ZN4rtos9SemaphoreC2Ei  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x0800b972   0x0000000e   Code   RO        30321    .text._ZN4rtos9SemaphoreD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Semaphore.o
+    0x0800b980   0x0000002a   Code   RO        26971    .text._ZN6CThunkIN4mbed3SPIEE10trampolineEP10CThunkBase  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800b9aa   0x00000002   PAD
+    0x0800b9ac   0x00000040   Code   RO          884    .text._ZN6HCSR046updateEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/HCSR04/hcsr04.o
+    0x0800b9ec   0x00000036   Code   RO          874    .text._ZN6HCSR048isr_fallEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/HCSR04/hcsr04.o
+    0x0800ba22   0x00000004   Code   RO          872    .text._ZN6HCSR048isr_riseEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/HCSR04/hcsr04.o
+    0x0800ba26   0x00000080   Code   RO          870    .text._ZN6HCSR04C2E7PinNameS0_RN6events10EventQueueE  BUILD/DISCO_L475VG_IOT01A/ARMC6/HCSR04/hcsr04.o
+    0x0800baa6   0x00000024   Code   RO         7994    .text._ZN6events10EventQueue13function_callIN4mbed8CallbackIFvvEEEEEvPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/cellular/source/framework/device/CellularStateMachine.o
+    0x0800baca   0x00000002   Code   RO         7324    .text._ZN6events10EventQueue13function_dtorIN4mbed8CallbackIFvvEEEEEvPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/cellular/source/framework/AT/AT_CellularContext.o
+    0x0800bacc   0x00000008   Code   RO        28236    .text._ZN6events10EventQueue16dispatch_foreverEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/EventQueue.o
+    0x0800bad4   0x0000004c   Code   RO         7322    .text._ZN6events10EventQueue4callIN4mbed8CallbackIFvvEEEEEiT_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/cellular/source/framework/AT/AT_CellularContext.o
+    0x0800bb20   0x00000050   Code   RO         7864    .text._ZN6events10EventQueue7call_inIN4mbed8CallbackIFvvEEEEEiNSt3__26chrono8durationIiNS6_5ratioILx1ELx1000EEEEET_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/cellular/source/framework/device/CellularContext.o
+    0x0800bb70   0x00000020   Code   RO        28228    .text._ZN6events10EventQueueC2EjPh  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/EventQueue.o
+    0x0800bb90   0x00000008   Code   RO          412    .text._ZN8ATParser4getcEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bb98   0x00000056   Code   RO          418    .text._ZN8ATParser4readEPc  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bbee   0x0000001c   Code   RO          434    .text._ZN8ATParser4recvEPKcz  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bc0a   0x0000001c   Code   RO          432    .text._ZN8ATParser4sendEPKcz  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bc26   0x00000002   PAD
+    0x0800bc28   0x0000002e   Code   RO          414    .text._ZN8ATParser5flushEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bc56   0x00000002   PAD
+    0x0800bc58   0x0000023c   Code   RO          426    .text._ZN8ATParser5vrecvEPKcSt9__va_list  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800be94   0x00000094   Code   RO          424    .text._ZN8ATParser5vsendEPKcSt9__va_list  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bf28   0x00000058   Code   RO          416    .text._ZN8ATParser5writeEPKcii  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bf80   0x0000001c   Code   RO          428    .text._ZN8ATParser6printfEPKcz  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bf9c   0x0000005c   Code   RO          420    .text._ZN8ATParser7vprintfEPKcSt9__va_list  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800bff8   0x0000003e   Code   RO          408    .text._ZN8ATParserC2ER11BufferedSpiPKcii  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/ATParser.o
+    0x0800c036   0x00000002   PAD
+    0x0800c038   0x0000002a   Code   RO          403    .text._ZN8ATParserD2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800c062   0x00000002   PAD
+    0x0800c064   0x0000004c   Code   RO          764    .text._ZN8ISM4336210disconnectEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c0b0   0x000000dc   Code   RO          770    .text._ZN8ISM4336210getGatewayEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c18c   0x000000dc   Code   RO          772    .text._ZN8ISM4336210getNetmaskEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c268   0x00000104   Code   RO          766    .text._ZN8ISM4336212getIPAddressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c36c   0x000000b0   Code   RO          768    .text._ZN8ISM4336213getMACAddressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c41c   0x000000a4   Code   RO          758    .text._ZN8ISM4336213print_rx_buffEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c4c0   0x00000088   Code   RO          754    .text._ZN8ISM4336214check_responseEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c548   0x00000190   Code   RO          790    .text._ZN8ISM4336217check_recv_statusEiPv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c6d8   0x00000120   Code   RO          752    .text._ZN8ISM4336220get_firmware_versionEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c7f8   0x00000028   Code   RO          760    .text._ZN8ISM433624dhcpEb  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800c820   0x00000348   Code   RO          786    .text._ZN8ISM433624openEPKciS1_i  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800cb68   0x00000364   Code   RO          784    .text._ZN8ISM433624scanEP15WiFiAccessPointj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800cecc   0x00000124   Code   RO          788    .text._ZN8ISM433624sendEiPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800cff0   0x000000a0   Code   RO          792    .text._ZN8ISM433625closeEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800d090   0x0000009c   Code   RO          748    .text._ZN8ISM433625resetEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800d12c   0x0000000e   Code   RO          798    .text._ZN8ISM433626attachEN4mbed8CallbackIFvvEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800d13a   0x00000002   PAD
+    0x0800d13c   0x0000018c   Code   RO          762    .text._ZN8ISM433627connectEPKcS1_12ism_security  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800d2c8   0x000000a4   Code   RO          774    .text._ZN8ISM433627getRSSIEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800d36c   0x00000110   Code   RO          746    .text._ZN8ISM43362C2E7PinNameS0_S0_S0_S0_S0_S0_b  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800d47c   0x00000014   Code   RO          637    .text._ZN8MyBufferIcE5clearEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/Buffer/MyBuffer.o
+    0x0800d490   0x00000020   Code   RO          635    .text._ZN8MyBufferIcEC2Ej  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/Buffer/MyBuffer.o
+    0x0800d4b0   0x00000010   Code   RO          643    .text._ZN8MyBufferIcED2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/Buffer/MyBuffer.o
+    0x0800d4c0   0x000000cc   Code   RO        25544    .text._ZN9TCPSocket4recvEPvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d58c   0x00000116   Code   RO        25540    .text._ZN9TCPSocket4sendEPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d6a2   0x00000002   PAD
+    0x0800d6a4   0x00000148   Code   RO        25550    .text._ZN9TCPSocket6acceptEPi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d7ec   0x00000034   Code   RO        25548    .text._ZN9TCPSocket6listenEi  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d820   0x0000000c   Code   RO        25542    .text._ZN9TCPSocket6sendtoERK13SocketAddressPKvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d82c   0x000000f0   Code   RO        25538    .text._ZN9TCPSocket7connectERK13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d91c   0x00000026   Code   RO        25546    .text._ZN9TCPSocket8recvfromEP13SocketAddressPvj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d942   0x00000004   Code   RO        25536    .text._ZN9TCPSocket9get_protoEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d946   0x00000068   Code   RO        25534    .text._ZN9TCPSocketC2EPS_Pv13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d9ae   0x00000014   Code   RO        25532    .text._ZN9TCPSocketC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d9c2   0x0000000e   Code   RO        25555    .text._ZN9TCPSocketD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x0800d9d0   0x00000004   Code   RO        25648    .text._ZN9UDPSocket9get_protoEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/UDPSocket.o
+    0x0800d9d4   0x00000014   Code   RO        25646    .text._ZN9UDPSocketC2Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/UDPSocket.o
+    0x0800d9e8   0x0000000e   Code   RO        25652    .text._ZN9UDPSocketD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/UDPSocket.o
+    0x0800d9f6   0x0000003a   Code   RO        29798    .text._ZNK12DirectSerial4pollEs  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800da30   0x00000054   Code   RO        26965    .text._ZNK12SingletonPtrIN4mbed14CircularBufferINS0_11TransactionINS0_3SPIEEELj2EjEEE3getEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x0800da84   0x00000050   Code   RO        25738    .text._ZNK12SingletonPtrIN4mbed8CallbackIFiiNS1_IFvvEEEEEEE3getEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800dad4   0x00000052   Code   RO        25746    .text._ZNK12SingletonPtrIN4rtos5MutexEE3getEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x0800db26   0x00000036   Code   RO        25519    .text._ZNK13SocketAddress14get_ip_addressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x0800db5c   0x0000004e   Code   RO        25521    .text._ZNK13SocketAddresscvbEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x0800dbaa   0x0000000a   Code   RO        25308    .text._ZNK16NetworkInterface21get_connection_statusEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x0800dbb4   0x0000001e   Code   RO          359    .text._ZNK17ISM43362Interface21get_connection_statusEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800dbd2   0x00000004   Code   RO        27219    .text._ZNK4mbed10FileHandle11is_blockingEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/UnbufferedSerial.o
+    0x0800dbd6   0x00000002   PAD
+    0x0800dbd8   0x0000007a   Code   RO        26781    .text._ZNK4mbed4impl7MbedCRCILj79764919ELh32ELNS_7CrcModeE2EE18do_compute_partialILS2_2EEENSt3__29enable_ifIXeqT_LS2_2EEiE4typeEPKhjPj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/MbedCRC.o
+    0x0800dc52   0x0000005a   Code   RO        29393    .text._ZNK4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE14_elapsed_ticksEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800dcac   0x00000012   Code   RO        29373    .text._ZNK4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE8get_tickEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800dcbe   0x00000012   Code   RO        29397    .text._ZNK4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EE8get_timeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0800dcd0   0x00000032   Code   RO        27128    .text._ZNK4mbed9TimerBase12elapsed_timeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800dd02   0x00000034   Code   RO        27124    .text._ZNK4mbed9TimerBase9slicetimeEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/Timer.o
+    0x0800dd36   0x00000084   Code   RO        30387    .text._ZNK4rtos6Thread9get_stateEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x0800ddba   0x00000002   PAD
+    0x0800ddbc   0x0000003c   Code   RO          800    .text._ZNK8ISM4336217connection_statusEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x0800ddf8   0x00000006   Code   RO          289    .text._ZThn4_N17ISM43362Interface10disconnectEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800ddfe   0x0000000a   Code   RO          283    .text._ZThn4_N17ISM43362Interface11set_channelEh  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800de08   0x00000006   Code   RO          279    .text._ZThn4_N17ISM43362Interface15set_credentialsEPKcS1_14nsapi_security  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800de0e   0x0000002c   Code   RO          323    .text._ZThn4_N17ISM43362Interface4scanEP15WiFiAccessPointj  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800de3a   0x0000002c   Code   RO          269    .text._ZThn4_N17ISM43362Interface7connectEPKcS1_14nsapi_securityh  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800de66   0x00000006   Code   RO          275    .text._ZThn4_N17ISM43362Interface7connectEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800de6c   0x00000020   Code   RO          319    .text._ZThn4_N17ISM43362Interface8get_rssiEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800de8c   0x0000004e   Code   RO          399    .text._ZThn4_N17ISM43362InterfaceD0Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800deda   0x00000042   Code   RO          397    .text._ZThn4_N17ISM43362InterfaceD1Ev  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df1c   0x0000000a   Code   RO          401    .text._ZTv0_n124_N17ISM43362Interface9get_stackEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df26   0x0000000c   Code   RO          299    .text._ZTv0_n44_N17ISM43362Interface15get_mac_addressEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df32   0x0000000c   Code   RO          295    .text._ZTv0_n52_N17ISM43362Interface14get_ip_addressEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df3e   0x0000000c   Code   RO          311    .text._ZTv0_n60_N17ISM43362Interface11get_netmaskEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df4a   0x0000000c   Code   RO          305    .text._ZTv0_n64_N17ISM43362Interface11get_gatewayEP13SocketAddress  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df56   0x0000000e   Code   RO          315    .text._ZTv0_n68_N17ISM43362Interface18get_interface_nameEPc  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df64   0x0000001e   Code   RO          357    .text._ZTv0_n92_N17ISM43362Interface6attachEN4mbed8CallbackIFv11nsapi_eventiEEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800df82   0x00000024   Code   RO          361    .text._ZTv0_n96_NK17ISM43362Interface21get_connection_statusEv  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0800dfa6   0x00000004   Code   RO        29938    .text._ZdaPv        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800dfaa   0x00000004   Code   RO        29882    .text._ZdlPv        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800dfae   0x0000004e   Code   RO        25525    .text._ZeqRK13SocketAddressS1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x0800dffc   0x0000004c   Code   RO        29932    .text._Znaj         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e048   0x00000004   Code   RO        29934    .text._ZnajRKSt9nothrow_t  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e04c   0x0000000c   Code   RO        25527    .text._ZneRK13SocketAddressS1_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/SocketAddress.o
+    0x0800e058   0x0000004c   Code   RO        29930    .text._Znwj         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e0a4   0x00000004   Code   RO        29880    .text._ZnwjRKSt9nothrow_t  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e0a8   0x00000024   Code   RO        29686    .text.__NVIC_SystemReset  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0800e0cc   0x00000078   Code   RO        29924    .text.__cxa_guard_acquire  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e144   0x00000042   Code   RO        29926    .text.__cxa_guard_release  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e186   0x00000002   PAD
+    0x0800e188   0x00000028   Code   RO        36493    .text.__cxa_pure_virtual  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcppabi_w.l(cxa_virtual.cpp.o)
+    0x0800e1b0   0x0000004e   Code   RO         1444    .text.__rt_entry    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800e1fe   0x00000002   PAD
+    0x0800e200   0x00000068   Code   RO         1448    .text.__user_perthread_libspace  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800e268   0x00000004   Code   RO        29860    .text.__user_setup_stackheap  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e26c   0x00000032   Code   RO        29856    .text._mbed_user_setup_stackheap  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e29e   0x00000034   Code   RO         1452    .text._mutex_acquire  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800e2d2   0x00000002   PAD
+    0x0800e2d4   0x00000042   Code   RO         1456    .text._mutex_free   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800e316   0x00000002   PAD
+    0x0800e318   0x000000a4   Code   RO         1450    .text._mutex_initialize  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800e3bc   0x00000030   Code   RO         1454    .text._mutex_release  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x0800e3ec   0x00000004   Code   RO         1083    .text._platform_post_stackheap_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0800e3f0   0x00000004   Code   RO        29948    .text._scanf_mbtowc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e3f4   0x00000004   Code   RO        29826    .text._sys_close    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e3f8   0x00000002   Code   RO        29834    .text._sys_exit     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e3fa   0x0000002a   Code   RO        29854    .text._sys_flen     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e424   0x00000004   Code   RO        29842    .text._sys_istty    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e428   0x0000008a   Code   RO        29822    .text._sys_open     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e4b2   0x00000006   Code   RO        29844    .text._sys_seek     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e4b8   0x00000130   Code   RO        29830    .text._sys_write    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e5e8   0x00000018   Code   RO        29836    .text._ttywrch      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e600   0x00000016   Code   RO        30035    .text._wait_us_ticks  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_wait_api_no_rtos.o
+    0x0800e616   0x00000004   Code   RO        36709    .text.abort_message  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcppabi_w.l(abort_message.cpp.o)
+    0x0800e61a   0x00000002   Code   RO        29029    .text.block_us_ticker_free  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x0800e61c   0x00000134   Code   RO        35684    .text.can_irq       BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x0800e750   0x0000003c   Code   RO        29828    .text.close         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800e78c   0x0000000a   Code   RO        10392    .text.common_write_16_bit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/libraries/nanostack-libservice/source/libBits/common_functions.o
+    0x0800e796   0x0000000c   Code   RO        29629    .text.core_util_are_interrupts_enabled  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x0800e7a2   0x00000016   Code   RO        29584    .text.core_util_atomic_load_u64  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_atomic_impl.o
+    0x0800e7b8   0x00000084   Code   RO        29635    .text.core_util_critical_section_enter  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x0800e83c   0x00000018   Code   RO        29637    .text.core_util_critical_section_exit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x0800e854   0x0000000c   Code   RO        29631    .text.core_util_is_isr_active  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x0800e860   0x00000054   Code   RO        36024    .text.debug         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800e8b4   0x00000064   Code   RO        36073    .text.debug         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x0800e918   0x00000082   Code   RO        28262    .text.equeue_alloc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800e99a   0x00000024   Code   RO        28256    .text.equeue_create  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800e9be   0x00000072   Code   RO        28258    .text.equeue_create_inplace  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800ea30   0x00000086   Code   RO        28264    .text.equeue_dealloc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800eab6   0x00000002   PAD
+    0x0800eab8   0x000001aa   Code   RO        28284    .text.equeue_dispatch  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800ec62   0x00000002   PAD
+    0x0800ec64   0x000000b4   Code   RO        28266    .text.equeue_enqueue  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800ed18   0x00000004   Code   RO        28318    .text.equeue_mutex_lock  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800ed1c   0x00000004   Code   RO        28320    .text.equeue_mutex_unlock  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800ed20   0x00000048   Code   RO        28268    .text.equeue_post   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue.o
+    0x0800ed68   0x00000014   Code   RO        28322    .text.equeue_sema_create  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800ed7c   0x00000006   Code   RO        28326    .text.equeue_sema_signal  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800ed82   0x00000018   Code   RO        28328    .text.equeue_sema_wait  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800ed9a   0x00000032   Code   RO        28312    .text.equeue_tick   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800edcc   0x00000004   Code   RO        28310    .text.equeue_tick_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/equeue_mbed.o
+    0x0800edd0   0x00000070   Code   RO        29642    .text.error         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0800ee40   0x00000034   Code   RO         1523    .text.error_msg     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0800ee74   0x0000002e   Code   RO        29900    .text.exit          BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800eea2   0x0000002c   Code   RO        29852    .text.fsync         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800eece   0x0000000a   Code   RO        28932    .text.get_lp_ticker_data  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x0800eed8   0x00000072   Code   RO        36014    .text.get_uart_index  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800ef4a   0x0000000a   Code   RO        29023    .text.get_us_ticker_data  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x0800ef54   0x0000002e   Code   RO        35709    .text.gpio_dir      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800ef82   0x0000004a   Code   RO        35705    .text.gpio_init     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800efcc   0x00000006   Code   RO        28910    .text.gpio_init_in  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x0800efd2   0x00000026   Code   RO        28912    .text.gpio_init_in_ex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x0800eff8   0x00000006   Code   RO        28914    .text.gpio_init_out  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x0800effe   0x00000034   Code   RO        28916    .text.gpio_init_out_ex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_gpio.o
+    0x0800f032   0x00000008   Code   RO        35719    .text.gpio_irq0     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f03a   0x00000008   Code   RO        35721    .text.gpio_irq1     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f042   0x00000008   Code   RO        35723    .text.gpio_irq2     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f04a   0x00000008   Code   RO        35725    .text.gpio_irq3     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f052   0x00000008   Code   RO        35727    .text.gpio_irq4     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f05a   0x00000008   Code   RO        35729    .text.gpio_irq5     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f062   0x00000008   Code   RO        35731    .text.gpio_irq6     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f06a   0x000000bc   Code   RO        35737    .text.gpio_irq_disable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f126   0x000000a8   Code   RO        35733    .text.gpio_irq_enable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f1ce   0x00000074   Code   RO        35735    .text.gpio_irq_free  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f242   0x00000002   PAD
+    0x0800f244   0x000001a4   Code   RO        35717    .text.gpio_irq_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f3e8   0x0000007a   Code   RO        35739    .text.gpio_irq_set  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f462   0x00000008   Code   RO        35707    .text.gpio_mode     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800f46a   0x00000002   PAD
+    0x0800f46c   0x00000064   Code   RO        35703    .text.gpio_set      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_api.o
+    0x0800f4d0   0x0000002a   Code   RO        28896    .text.hal_critical_section_enter  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x0800f4fa   0x00000002   PAD
+    0x0800f4fc   0x00000080   Code   RO        28898    .text.hal_critical_section_exit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x0800f57c   0x0000015c   Code   RO        36053    .text.hal_deepsleep  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/sleep.o
+    0x0800f6d8   0x00000022   Code   RO        36051    .text.hal_sleep     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/sleep.o
+    0x0800f6fa   0x00000110   Code   RO        29644    .text.handle_error  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0800f80a   0x00000002   PAD
+    0x0800f80c   0x000000d0   Code   RO        35741    .text.handle_interrupt_in  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x0800f8dc   0x000000b8   Code   RO        36129    .text.init_32bit_timer  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0800f994   0x00000048   Code   RO        36061    .text.init_spi      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x0800f9dc   0x00000092   Code   RO        36016    .text.init_uart     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x0800fa6e   0x00000002   PAD
+    0x0800fa70   0x0000017c   Code   RO        28993    .text.initialize    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800fbec   0x0000006c   Code   RO        29003    .text.insert_event  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0800fc58   0x000000ac   Code   RO        10458    .text.ip4tos        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/libraries/nanostack-libservice/source/libip4string/ip4tos.o
+    0x0800fd04   0x000000ac   Code   RO        10466    .text.ip6tos        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/libraries/nanostack-libservice/source/libip6string/ip6tos.o
+    0x0800fdb0   0x00000028   Code   RO        29816    .text.isatty        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x0800fdd8   0x00000028   Code   RO        35865    .text.lp_ticker_clear_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0800fe00   0x00000074   Code   RO        35857    .text.lp_ticker_disable_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0800fe74   0x00000036   Code   RO        35867    .text.lp_ticker_fire_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0800feaa   0x00000004   Code   RO        35869    .text.lp_ticker_free  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0800feae   0x0000000a   Code   RO        35853    .text.lp_ticker_get_info  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0800feb8   0x00000194   Code   RO        35855    .text.lp_ticker_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0801004c   0x00000018   Code   RO        28936    .text.lp_ticker_irq_handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x08010064   0x00000012   Code   RO        35861    .text.lp_ticker_read  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08010076   0x00000002   PAD
+    0x08010078   0x00000114   Code   RO        35863    .text.lp_ticker_set_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x0801018c   0x00000032   Code   RO        29846    .text.lseek         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080101be   0x00000002   PAD
+    0x080101c0   0x00000038   Code   RO        36169    .text.main          BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x080101f8   0x0000001a   Code   RO        29518    .text.mbed_assert_internal  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_assert.o
+    0x08010212   0x00000002   PAD
+    0x08010214   0x00000062   Code   RO        29618    .text.mbed_die      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x08010276   0x00000002   PAD
+    0x08010278   0x00000124   Code   RO        29666    .text.mbed_error    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x0801039c   0x0000006a   Code   RO        29654    .text.mbed_error_initialize  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08010406   0x00000020   Code   RO        29620    .text.mbed_error_printf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x08010426   0x00000002   PAD
+    0x08010428   0x00000052   Code   RO        29624    .text.mbed_error_puts  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x0801047a   0x00000034   Code   RO        29622    .text.mbed_error_vprintf  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_board.o
+    0x080104ae   0x00000002   PAD
+    0x080104b0   0x00000100   Code   RO        29501    .text.mbed_fault_handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x080105b0   0x0000000c   Code   RO        29662    .text.mbed_get_error_in_progress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x080105bc   0x0000003e   Code   RO        29648    .text.mbed_halt_system  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x080105fa   0x00000002   PAD
+    0x080105fc   0x0000003c   Code   RO         1464    .text.mbed_init     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x08010638   0x000003a2   Code   RO        30176    .text.mbed_minimal_formatted_string  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x080109da   0x00000002   PAD
+    0x080109dc   0x0000015c   Code   RO        30178    .text.mbed_minimal_formatted_string_integer  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08010b38   0x00000046   Code   RO        30180    .text.mbed_minimal_putchar  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o
+    0x08010b7e   0x00000002   PAD
+    0x08010b80   0x000000b0   Code   RO        29037    .text.mbed_mpu_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mpu/mbed_mpu_v7m.o
+    0x08010c30   0x00000004   Code   RO         1480    .text.mbed_rtos_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08010c34   0x0000002c   Code   RO         1484    .text.mbed_rtos_init_singleton_mutex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08010c60   0x000000a8   Code   RO         1482    .text.mbed_rtos_start  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x08010d08   0x0000003e   Code   RO        35898    .text.mbed_sdk_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/mbed_overrides.o
+    0x08010d46   0x0000001e   Code   RO         1468    .text.mbed_start    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x08010d64   0x00000020   Code   RO        26770    .text.mbed_tiny_compute_crc32  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/MbedCRC.o
+    0x08010d84   0x0000001a   Code   RO         1446    .text.mbed_toolchain_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x08010d9e   0x0000002e   Code   RO        10448    .text.ns_list_remove_  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/libraries/nanostack-libservice/source/libList/ns_list.o
+    0x08010dcc   0x00000054   Code   RO        25671    .text.nsapi_dns_add_server  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08010e20   0x000000be   Code   RO        29824    .text.open          BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08010ede   0x0000002e   Code   RO          953    .text.osDelay       BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_delay.o
+    0x08010f0c   0x0000002e   Code   RO          979    .text.osEventFlagsDelete  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08010f3a   0x00000032   Code   RO          963    .text.osEventFlagsNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08010f6c   0x00000056   Code   RO          967    .text.osEventFlagsSet  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08010fc2   0x0000004e   Code   RO          977    .text.osEventFlagsWait  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08011010   0x00000032   Code   RO         1033    .text.osKernelGetState  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08011042   0x0000002a   Code   RO         1049    .text.osKernelGetTickCount  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x0801106c   0x00000032   Code   RO         1027    .text.osKernelInitialize  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x0801109e   0x00000026   Code   RO         1047    .text.osKernelResume  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x080110c4   0x0000002e   Code   RO         1037    .text.osKernelStart  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x080110f2   0x0000002c   Code   RO         1045    .text.osKernelSuspend  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x0801111e   0x0000007c   Code   RO         1159    .text.osMessageQueueGet  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x0801119a   0x00000032   Code   RO         1153    .text.osMessageQueueNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x080111cc   0x00000084   Code   RO         1157    .text.osMessageQueuePut  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08011250   0x0000002e   Code   RO         1209    .text.osMutexAcquire  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0801127e   0x0000002e   Code   RO         1215    .text.osMutexDelete  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x080112ac   0x00000032   Code   RO         1205    .text.osMutexNew    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x080112de   0x0000002e   Code   RO         1211    .text.osMutexRelease  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0801130c   0x000000fc   Code   RO         1499    .text.osRtxErrorNotify  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08011408   0x00000038   Code   RO          983    .text.osRtxEventFlagsPostProcess  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08011440   0x00000004   Code   RO         1497    .text.osRtxIdleThread  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08011444   0x00000086   Code   RO         1101    .text.osRtxMemoryAlloc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x080114ca   0x00000002   PAD
+    0x080114cc   0x0000004e   Code   RO         1103    .text.osRtxMemoryFree  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x0801151a   0x00000038   Code   RO         1099    .text.osRtxMemoryInit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_memory.o
+    0x08011552   0x0000003a   Code   RO         1109    .text.osRtxMemoryPoolAlloc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x0801158c   0x0000004a   Code   RO         1111    .text.osRtxMemoryPoolFree  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x080115d6   0x00000002   PAD
+    0x080115d8   0x00000052   Code   RO         1107    .text.osRtxMemoryPoolInit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mempool.o
+    0x0801162a   0x000000d6   Code   RO         1183    .text.osRtxMessageQueuePostProcess  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08011700   0x0000004a   Code   RO         1201    .text.osRtxMutexOwnerRelease  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x0801174a   0x00000002   PAD
+    0x0801174c   0x0000004a   Code   RO         1203    .text.osRtxMutexOwnerRestore  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08011796   0x00000002   PAD
+    0x08011798   0x000000a4   Code   RO         1261    .text.osRtxPendSV_Handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x0801183c   0x00000076   Code   RO         1263    .text.osRtxPostProcess  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x080118b2   0x00000036   Code   RO         1247    .text.osRtxSemaphorePostProcess  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x080118e8   0x000000a2   Code   RO         1293    .text.osRtxThreadDelayInsert  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x0801198a   0x00000042   Code   RO         1289    .text.osRtxThreadDelayRemove  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080119cc   0x000000a2   Code   RO         1277    .text.osRtxThreadDelayTick  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011a6e   0x00000002   PAD
+    0x08011a70   0x000000fe   Code   RO         1285    .text.osRtxThreadDispatch  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011b6e   0x00000064   Code   RO         1367    .text.osRtxThreadFree  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011bd2   0x00000012   Code   RO         1269    .text.osRtxThreadListGet  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011be4   0x0000002a   Code   RO         1267    .text.osRtxThreadListPut  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011c0e   0x00000014   Code   RO         1273    .text.osRtxThreadListRemove  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011c22   0x00000002   PAD
+    0x08011c24   0x00000046   Code   RO         1271    .text.osRtxThreadListSort  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011c6a   0x0000002a   Code   RO         1343    .text.osRtxThreadPostProcess  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011c94   0x0000003a   Code   RO         1275    .text.osRtxThreadReadyPut  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011cce   0x00000014   Code   RO         1279    .text.osRtxThreadRegPtr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011ce2   0x0000002a   Code   RO         1283    .text.osRtxThreadStackCheck  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011d0c   0x00000046   Code   RO         1295    .text.osRtxThreadStartup  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011d52   0x00000012   Code   RO         1281    .text.osRtxThreadSwitch  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011d64   0x0000004c   Code   RO         1291    .text.osRtxThreadWaitEnter  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011db0   0x00000062   Code   RO         1287    .text.osRtxThreadWaitExit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08011e12   0x00000074   Code   RO         1259    .text.osRtxTick_Handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_system.o
+    0x08011e86   0x00000002   PAD
+    0x08011e88   0x00000044   Code   RO         1389    .text.osRtxTimerThread  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08011ecc   0x0000005a   Code   RO         1391    .text.osRtxTimerTick  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_timer.o
+    0x08011f26   0x0000002e   Code   RO         1243    .text.osSemaphoreDelete  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08011f54   0x00000032   Code   RO         1231    .text.osSemaphoreNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08011f86   0x00000076   Code   RO         1237    .text.osSemaphoreRelease  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08011ffc   0x0000001a   Code   RO         1327    .text.osThreadExit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08012016   0x0000002a   Code   RO         1303    .text.osThreadGetId  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08012040   0x00000032   Code   RO         1299    .text.osThreadNew   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x08012072   0x00000038   Code   RO         1329    .text.osThreadTerminate  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080120aa   0x00000002   PAD
+    0x080120ac   0x00000138   Code   RO        35904    .text.pin_function  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x080121e4   0x00000088   Code   RO        35906    .text.pin_mode      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x0801226c   0x00000026   Code   RO        28953    .text.pinmap_find_function  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08012292   0x00000002   PAD
+    0x08012294   0x00000044   Code   RO        28947    .text.pinmap_merge  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x080122d8   0x00000078   Code   RO        28951    .text.pinmap_peripheral  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_pinmap_common.o
+    0x08012350   0x00000170   Code   RO        29503    .text.print_context_info  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x080124c0   0x000001f0   Code   RO        29646    .text.print_error_report  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x080126b0   0x00000038   Code   RO        36145    .text.restore_timer_ctx  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080126e8   0x0000000e   Code   RO         1551    .text.rtos_idle_loop  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x080126f6   0x00000038   Code   RO        36143    .text.save_timer_ctx  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0801272e   0x00000002   PAD
+    0x08012730   0x00000138   Code   RO        28999    .text.schedule_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08012868   0x0000008e   Code   RO        36022    .text.serial_baud   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x080128f6   0x00000002   PAD
+    0x080128f8   0x00000072   Code   RO        35498    .text.serial_getc   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/serial_device.o
+    0x0801296a   0x00000002   PAD
+    0x0801296c   0x000001c8   Code   RO        36012    .text.serial_init_direct  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08012b34   0x00000092   Code   RO        36044    .text.serial_is_tx_ongoing  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08012bc6   0x00000002   PAD
+    0x08012bc8   0x0000002a   Code   RO        35500    .text.serial_putc   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/serial_device.o
+    0x08012bf2   0x00000024   Code   RO        36036    .text.serial_readable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08012c16   0x0000001a   Code   RO        36038    .text.serial_writable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08012c30   0x00000060   Code   RO        29775    .text.sleep_manager_lock_deep_sleep_internal  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x08012c90   0x00000024   Code   RO        29783    .text.sleep_manager_sleep_auto  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x08012cb4   0x00000064   Code   RO        29777    .text.sleep_manager_unlock_deep_sleep_internal  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x08012d18   0x000000a0   Code   RO        36071    .text.spi_format    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08012db8   0x00000054   Code   RO        36075    .text.spi_frequency  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08012e0c   0x0000005c   Code   RO        35536    .text.spi_get_clock_freq  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/spi_api.o
+    0x08012e68   0x00000060   Code   RO        36063    .text.spi_get_peripheral_name  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08012ec8   0x000000dc   Code   RO        36067    .text.spi_init      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08012fa4   0x00000194   Code   RO        36065    .text.spi_init_direct  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08013138   0x00000086   Code   RO        36079    .text.spi_master_block_write  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x080131be   0x00000002   PAD
+    0x080131c0   0x00000096   Code   RO        36077    .text.spi_master_write  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08013256   0x00000002   PAD
+    0x08013258   0x00000080   Code   RO        10462    .text.stoip4        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/libraries/nanostack-libservice/source/libip4string/stoip4.o
+    0x080132d8   0x0000013a   Code   RO        10472    .text.stoip6        BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/libraries/nanostack-libservice/source/libip6string/stoip6.o
+    0x08013412   0x00000014   Code   RO          957    .text.svcRtxDelay   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_delay.o
+    0x08013426   0x00000002   PAD
+    0x08013428   0x0000006c   Code   RO          993    .text.svcRtxEventFlagsDelete  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08013494   0x00000080   Code   RO          981    .text.svcRtxEventFlagsNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08013514   0x00000088   Code   RO          989    .text.svcRtxEventFlagsSet  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x0801359c   0x00000068   Code   RO          991    .text.svcRtxEventFlagsWait  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_evflags.o
+    0x08013604   0x0000000c   Code   RO         1035    .text.svcRtxKernelGetState  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08013610   0x0000000c   Code   RO         1051    .text.svcRtxKernelGetTickCount  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x0801361c   0x0000015a   Code   RO         1065    .text.svcRtxKernelInitialize  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08013776   0x00000002   PAD
+    0x08013778   0x00000098   Code   RO         1077    .text.svcRtxKernelResume  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08013810   0x000000a4   Code   RO         1067    .text.svcRtxKernelStart  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x080138b4   0x0000005c   Code   RO         1075    .text.svcRtxKernelSuspend  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08013910   0x000000f6   Code   RO         1193    .text.svcRtxMessageQueueGet  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08013a06   0x00000158   Code   RO         1181    .text.svcRtxMessageQueueNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08013b5e   0x000000c0   Code   RO         1189    .text.svcRtxMessageQueuePut  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_msgqueue.o
+    0x08013c1e   0x000000b0   Code   RO         1221    .text.svcRtxMutexAcquire  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08013cce   0x00000002   PAD
+    0x08013cd0   0x000000be   Code   RO         1227    .text.svcRtxMutexDelete  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08013d8e   0x00000078   Code   RO         1217    .text.svcRtxMutexNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08013e06   0x000000d8   Code   RO         1223    .text.svcRtxMutexRelease  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_mutex.o
+    0x08013ede   0x00000002   PAD
+    0x08013ee0   0x0000006c   Code   RO         1255    .text.svcRtxSemaphoreDelete  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08013f4c   0x000000a0   Code   RO         1245    .text.svcRtxSemaphoreNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08013fec   0x00000066   Code   RO         1253    .text.svcRtxSemaphoreRelease  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_semaphore.o
+    0x08014052   0x00000072   Code   RO         1371    .text.svcRtxThreadExit  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080140c4   0x0000000c   Code   RO         1305    .text.svcRtxThreadGetId  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080140d0   0x0000021e   Code   RO         1297    .text.svcRtxThreadNew  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080142ee   0x000000f2   Code   RO         1373    .text.svcRtxThreadTerminate  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_thread.o
+    0x080143e0   0x00000004   Code   RO        29668    .text.system_reset  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x080143e4   0x00000032   Code   RO        29005    .text.ticker_insert_event_us  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x08014416   0x00000002   PAD
+    0x08014418   0x00000062   Code   RO        28995    .text.ticker_irq_handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0801447a   0x00000022   Code   RO        29011    .text.ticker_read_us  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x0801449c   0x00000036   Code   RO        29007    .text.ticker_remove_event  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x080144d2   0x0000001a   Code   RO        28991    .text.ticker_set_handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x080144ec   0x0000002a   Code   RO        36127    .text.timer_irq_handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08014516   0x0000002a   Code   RO         1503    .text.trap_rtx_error  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x08014540   0x00000086   Code   RO        28997    .text.update_present_time  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_ticker_api.o
+    0x080145c6   0x00000012   Code   RO        36141    .text.us_ticker_clear_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080145d8   0x00000014   Code   RO        36139    .text.us_ticker_disable_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x080145ec   0x00000022   Code   RO        36137    .text.us_ticker_fire_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x0801460e   0x0000000a   Code   RO        36125    .text.us_ticker_get_info  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08014618   0x00000018   Code   RO        36131    .text.us_ticker_init  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08014630   0x00000018   Code   RO        29027    .text.us_ticker_irq_handler  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x08014648   0x0000000c   Code   RO        36133    .text.us_ticker_read  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08014654   0x0000001c   Code   RO        36135    .text.us_ticker_set_interrupt  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08014670   0x00000032   Code   RO        29832    .text.write         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x080146a2   0x00000002   PAD
+    0x080146a4   0x00000338   Code   RO        36835    CL$$btod_div_common  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x080149dc   0x00000084   Code   RO        36833    CL$$btod_e2d        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014a60   0x000000dc   Code   RO        36832    CL$$btod_e2e        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014b3c   0x0000002a   Code   RO        36829    CL$$btod_ediv       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014b66   0x0000002a   Code   RO        36831    CL$$btod_edivd      c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014b90   0x0000002a   Code   RO        36828    CL$$btod_emul       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014bba   0x0000002a   Code   RO        36830    CL$$btod_emuld      c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014be4   0x00000244   Code   RO        36834    CL$$btod_mult_common  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x08014e28   0x000000f8   Code   RO        36883    i.__hardfp___mathlib_tofloat  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(narrow.o)
+    0x08014f20   0x000000d0   Code   RO        36925    i.__hardfp_ldexp    c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(ldexp.o)
+    0x08014ff0   0x00000020   Code   RO        36949    i.__mathlib_dbl_overflow  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(dunder.o)
+    0x08015010   0x00000020   Code   RO        36951    i.__mathlib_dbl_underflow  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(dunder.o)
+    0x08015030   0x00000012   Code   RO        36884    i.__mathlib_narrow  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(narrow.o)
+    0x08015042   0x00000014   Code   RO        36927    i.__support_ldexp   c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(ldexp.o)
+    0x08015056   0x0000000e   Code   RO        36728    i._is_digit         c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(scanf_fp.o)
+    0x08015064   0x0000001a   Code   RO        36300    i.fputc             c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc.o)
+    0x0801507e   0x00000002   PAD
+    0x08015080   0x0000008c   Code   RO        36915    i.frexp             c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(frexp.o)
+    0x0801510c   0x0000002c   Code   RO        36605    locale$$code        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_ctype_c.o)
+    0x08015138   0x0000002c   Code   RO        36853    locale$$code        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_numeric_c.o)
+    0x08015164   0x00000062   Code   RO        36909    x$fpl$d2f           c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(d2f.o)
+    0x080151c6   0x00000002   PAD
+    0x080151c8   0x00000010   Code   RO        36959    x$fpl$dcheck1       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dcheck1.o)
+    0x080151d8   0x00000018   Code   RO        36802    x$fpl$dcmpinf       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dcmpi.o)
+    0x080151f0   0x00000078   Code   RO        36674    x$fpl$deqf          c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(deqf.o)
+    0x08015268   0x00000078   Code   RO        36678    x$fpl$dleqf         c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dleqf.o)
+    0x080152e0   0x00000154   Code   RO        36439    x$fpl$dmul          c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dmul.o)
+    0x08015434   0x0000009c   Code   RO        36680    x$fpl$dnaninf       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dnaninf.o)
+    0x080154d0   0x0000000c   Code   RO        36682    x$fpl$dretinf       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dretinf.o)
+    0x080154dc   0x0000006c   Code   RO        36911    x$fpl$drleqf        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(drleqf.o)
+    0x08015548   0x0000001a   Code   RO        36804    x$fpl$fpinit        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fpinit.o)
+    0x08015562   0x0000000a   Code   RO        36923    x$fpl$fretinf       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fretinf.o)
+    0x0801556c   0x00000006   Code   RO        36875    x$fpl$ieeestatus    c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(istatus.o)
+    0x08015572   0x00000064   Code   RO        36961    x$fpl$retnan        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(retnan.o)
+    0x080155d6   0x0000005c   Code   RO        36943    x$fpl$scalbn        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(scalbn.o)
+    0x08015632   0x00000004   Code   RO        36686    x$fpl$scanf1        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(scanf1.o)
+    0x08015636   0x00000008   Code   RO        36877    x$fpl$scanf2        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(scanf2.o)
+    0x0801563e   0x00000030   Code   RO        36963    x$fpl$trapveneer    c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(trapv.o)
+    0x0801566e   0x00000000   Code   RO        36688    x$fpl$usenofp       c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(usenofp.o)
+    0x0801566e   0x00000002   PAD
+    0x08015670   0x00000094   Data   RO        36823    .constdata          c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(bigflt0.o)
+    0x08015704   0x000000a0   Data   RO         1089    .rodata             BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x080157a4   0x00000010   Data   RO         1491    .rodata..L__const.mbed_rtos_init_singleton_mutex.singleton_mutex_attr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x080157b4   0x0000017d   Data   RO          802    .rodata..Lconstinit.1  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x08015931   0x00000010   Data   RO        35391    .rodata.AHBPrescTable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x08015941   0x00000008   Data   RO        35392    .rodata.APBPrescTable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x08015949   0x00000003   PAD
+    0x0801594c   0x00000030   Data   RO        35393    .rodata.MSIRangeTable  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x0801597c   0x0000006c   Data   RO        35408    .rodata.PinMap_SPI_MISO  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/TARGET_DISCO_L475VG_IOT01A/PeripheralPins.o
+    0x080159e8   0x0000006c   Data   RO        35407    .rodata.PinMap_SPI_MOSI  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/TARGET_DISCO_L475VG_IOT01A/PeripheralPins.o
+    0x08015a54   0x0000006c   Data   RO        35409    .rodata.PinMap_SPI_SCLK  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/TARGET_DISCO_L475VG_IOT01A/PeripheralPins.o
+    0x08015ac0   0x0000006c   Data   RO        35410    .rodata.PinMap_SPI_SSEL  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/TARGET_STM32L475xG/TARGET_DISCO_L475VG_IOT01A/PeripheralPins.o
+    0x08015b2c   0x00000001   Data   RO        36490    .rodata._ZSt7nothrow  c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcpp_w.l(new.cpp.o)
+    0x08015b2d   0x00000003   PAD
+    0x08015b30   0x00000064   Data   RO          741    .rodata._ZTV11BufferedSpi  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedSpi.o
+    0x08015b94   0x00000050   Data   RO        29956    .rodata._ZTV12DirectSerial  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08015be4   0x00000050   Data   RO        25246    .rodata._ZTV14InternetSocket  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08015c34   0x00000084   Data   RO        25312    .rodata._ZTV16NetworkInterface  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x08015cb8   0x000001e0   Data   RO          366    .rodata._ZTV17ISM43362Interface  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x08015e98   0x00000050   Data   RO        25552    .rodata._ZTV9TCPSocket  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x08015ee8   0x00000050   Data   RO        25650    .rodata._ZTV9UDPSocket  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/UDPSocket.o
+    0x08015f38   0x0000000c   Data   RO        27161    .rodata._ZTVN4mbed10TimerEventE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/TimerEvent.o
+    0x08015f44   0x00000010   Data   RO        26767    .rodata._ZTVN4mbed11InterruptInE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/InterruptIn.o
+    0x08015f54   0x00000020   Data   RO        26962    .rodata._ZTVN4mbed3SPIE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x08015f74   0x0000000c   Data   RO        29495    .rodata._ZTVN4mbed8internal8SysTimerINSt3__25ratioILx1ELx1000EEELb1EEE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x08015f80   0x00000010   Data   RO        30406    .rodata._ZTVN4rtos6ThreadE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x08015f90   0x00000018   Data   RO        29966    .rodata._ZZL15default_consolevE14console_pinmap  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08015fa8   0x00000008   Data   RO        29952    .rodata.__stderr_name  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08015fb0   0x00000007   Data   RO        29950    .rodata.__stdin_name  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08015fb7   0x00000008   Data   RO        29951    .rodata.__stdout_name  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08015fbf   0x00000001   PAD
+    0x08015fc0   0x00000010   Data   RO        34789    .rodata.cst16       BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal_uart.o
+    0x08015fd0   0x00000040   Data   RO        35908    .rodata.ll_pin_defines  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/pinmap.o
+    0x08016010   0x00000008   Data   RO        28938    .rodata.lp_data     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x08016018   0x00000024   Data   RO        28940    .rodata.lp_interface  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x0801603c   0x00000008   Data   RO        35871    .rodata.lp_ticker_get_info.info  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x08016044   0x00000004   Data   RO         1091    .rodata.osRtxUserSVC  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08016048   0x00000024   Data   RO         1086    .rodata.os_idle_thread_attr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x0801606c   0x00000018   Data   RO         1088    .rodata.os_timer_mq_attr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x08016084   0x00000024   Data   RO         1087    .rodata.os_timer_thread_attr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x080160a8   0x000000c0   Data   RO        35474    .rodata.pin_lines_desc  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/gpio_irq_device.o
+    0x08016168   0x000000e3   Data   RO          365    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x0801624b   0x00000043   Data   RO          686    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ATParser/BufferedSpi/BufferedPrint.o
+    0x0801628e   0x00000246   Data   RO          803    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x080164d4   0x00000013   Data   RO         1092    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x080164e7   0x00000010   Data   RO         1489    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x080164f7   0x00000138   Data   RO         1526    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x0801662f   0x00000035   Data   RO         1555    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x08016664   0x0000002f   Data   RO        25247    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/InternetSocket.o
+    0x08016693   0x00000011   Data   RO        25340    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterfaceDefaults.o
+    0x080166a4   0x0000005a   Data   RO        25384    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x080166fe   0x00000044   Data   RO        25553    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/TCPSocket.o
+    0x08016742   0x00000056   Data   RO        25736    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x08016798   0x0000004a   Data   RO        26963    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x080167e2   0x0000003e   Data   RO        28337    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x08016820   0x0000004e   Data   RO        29355    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/SysTimer.o
+    0x0801686e   0x000000c8   Data   RO        29507    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x08016936   0x000001aa   Data   RO        29693    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x08016ae0   0x00000063   Data   RO        29960    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x08016b43   0x00000012   Data   RO        30298    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Mutex.o
+    0x08016b55   0x00000025   Data   RO        30366    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/ThisThread.o
+    0x08016b7a   0x0000001b   Data   RO        30405    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Thread.o
+    0x08016b95   0x0000002a   Data   RO        36047    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x08016bbf   0x00000039   Data   RO        36113    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/stm_spi_api.o
+    0x08016bf8   0x00000121   Data   RO        36173    .rodata.str1.1      BUILD/DISCO_L475VG_IOT01A/ARMC6/source/main.o
+    0x08016d19   0x00000003   PAD
+    0x08016d1c   0x0000000b   Data   RO         1079    .rodata.str1.4      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x08016d27   0x00000001   PAD
+    0x08016d28   0x00000008   Data   RO        29031    .rodata.us_data     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x08016d30   0x00000024   Data   RO        29033    .rodata.us_interface  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x08016d54   0x00000008   Data   RO        36149    .rodata.us_ticker_get_info.info  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x08016d5c   0x00000040   Data   RO        36965    Region$$Table       anon$$obj.o
+    0x08016d9c   0x00000008   Data   RO        36871    c$$dinf             c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fpconst.o)
+    0x08016da4   0x00000008   Data   RO        36874    c$$dmax             c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fpconst.o)
+    0x08016dac   0x00000110   Data   RO        36604    locale$$data        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_ctype_c.o)
+    0x08016ebc   0x0000001c   Data   RO        36852    locale$$data        c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_numeric_c.o)
+    0x08016ed8   0x00000004   Data   RO        30530    .init_array         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/storage/blockdevice/COMPONENT_QSPIF/source/QSPIFBlockDevice.o
+    0x08016edc   0x00000000   Data   RO        36408    .init_array         c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+
+
+    Execution Region RW_m_crash_data (Base: 0x10000188, Size: 0x00000100, Max: 0x00000100, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000188   0x00000100   Zero   RW            1    RW_m_crash_data.bss  anon$$obj.o
+
+
+    Execution Region RW_IRAM2 (Base: 0x10000288, Size: 0x000034d8, Max: 0x00007d78, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000288   0x00000004   Data   RW        36324    .data               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x1000028c   0x00000004   Data   RW        36326    .data               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x10000290   0x00000004   Data   RW        36593    .data               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(streamlock.o)
+    0x10000294   0x00000004   Data   RW        35390    .data.SystemCoreClock  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/system_stm32l4xx.o
+    0x10000298   0x00000040   Data   RW        29965    .data._ZL11filehandles  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x100002d8   0x00000004   Data   RW         1556    .data._ZL14idle_hook_fptr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_idle.o
+    0x100002dc   0x00000008   Data   RW        25313    .data._ZZL29get_interface_event_list_headvE10event_list  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkInterface.o
+    0x100002e4   0x00000004   Data   RW        29032    .data.irq_handler   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x100002e8   0x00000054   Zero   RW        36321    .bss                c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x1000033c   0x00000054   Zero   RW        36323    .bss                c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x10000390   0x000000e4   Zero   RW        36345    .bss                c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rand.o)
+    0x10000474   0x00000001   Zero   RW        35879    .bss.LPTICKER_inited  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x10000475   0x00000003   PAD
+    0x10000478   0x0000004c   Zero   RW        36150    .bss.TimMasterHandle  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x100004c4   0x00000004   Zero   RW        25383    .bss._ZGVZN12NetworkStack7call_inEiN4mbed8CallbackIFvvEEEE11event_queue  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x100004c8   0x00000004   Zero   RW        28348    .bss._ZGVZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKcE6thread  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x100004cc   0x00000010   Zero   RW        29958    .bss._ZL13stdio_in_prev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x100004dc   0x00000010   Zero   RW        29959    .bss._ZL14stdio_out_prev  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x100004ec   0x00000028   Zero   RW        25734    .bss._ZL15dns_cache_mutex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x10000514   0x00000028   Zero   RW        29955    .bss._ZL16filehandle_mutex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x1000053c   0x00000001   Zero   RW        25732    .bss._ZL17dns_timer_running  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x1000053d   0x00000003   PAD
+    0x10000540   0x00000004   Zero   RW        30527    .bss._ZN16QSPIFBlockDevice28_active_qspif_flash_csel_arrE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/storage/blockdevice/COMPONENT_QSPIF/source/QSPIFBlockDevice.o
+    0x10000544   0x0000039c   Zero   RW        26960    .bss._ZN4mbed3SPI12_peripheralsE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x100008e0   0x00000004   Zero   RW        26961    .bss._ZN4mbed3SPI17_peripherals_usedE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/drivers/source/SPI.o
+    0x100008e4   0x00000004   Zero   RW        29255    .bss._ZN4mbed8FileBase5_headE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x100008e8   0x00000004   Zero   RW        29967    .bss._ZZL15default_consolevE7console  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x100008ec   0x000000bc   Zero   RW        28347    .bss._ZZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKcE6thread  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x100009a8   0x00000004   Zero   RW        30270    .bss._ZZN4rtos6Kernel4impl14get_tick_countEvE6tick_h  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Kernel.o
+    0x100009ac   0x00000004   PAD
+    0x100009b0   0x00002000   Zero   RW         1486    .bss._main_stack    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x100029b0   0x00000020   Zero   RW         1459    .bss._static_mutexes  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x100029d0   0x00000004   Zero   RW        35697    .bss.can_irq_ids    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x100029d4   0x00000214   Zero   RW        35744    .bss.channels       BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x10002be8   0x00000001   Zero   RW        28903    .bss.critical_interrupts_enabled  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x10002be9   0x00000003   PAD
+    0x10002bec   0x00000004   Zero   RW        29639    .bss.critical_section_reentrancy_counter  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_critical.o
+    0x10002bf0   0x00000002   Zero   RW        29785    .bss.deep_sleep_lock  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_power_mgmt.o
+    0x10002bf2   0x00000002   PAD
+    0x10002bf4   0x00000004   Zero   RW        29694    .bss.error_hook     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x10002bf8   0x00000038   Zero   RW        29034    .bss.events         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_us_ticker_api.o
+    0x10002c30   0x00000001   Zero   RW        35874    .bss.future_event_flag  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x10002c31   0x00000003   PAD
+    0x10002c34   0x0000004c   Zero   RW           79    .bss.hI2cHandler    BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01.o
+    0x10002c80   0x00000001   Zero   RW        29690    .bss.is_reboot_error_valid  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x10002c81   0x00000003   PAD
+    0x10002c84   0x00000040   Zero   RW        29689    .bss.last_error_ctx  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x10002cc4   0x00000001   Zero   RW        35872    .bss.lp_Fired       BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x10002cc5   0x00000001   Zero   RW        35876    .bss.lp_cmpok       BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x10002cc6   0x00000002   PAD
+    0x10002cc8   0x00000004   Zero   RW        35877    .bss.lp_delayed_counter  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x10002ccc   0x00000004   Zero   RW        29953    .bss.mbed_heap_start  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x10002cd0   0x00000004   Zero   RW         1476    .bss.mbed_stack_isr_start  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x10002cd4   0x00000040   Zero   RW         1085    .bss.os             BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x10002d14   0x00000034   Zero   RW         1095    .bss.os.msgqueue.cb  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x10002d48   0x00000088   Zero   RW         1093    .bss.os.thread.cb   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x10002dd0   0x00000044   Zero   RW         1488    .bss.os.thread.cb   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x10002e14   0x00000004   PAD
+    0x10002e18   0x00000600   Zero   RW         1094    .bss.os.thread.stack  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x10003418   0x00000002   Zero   RW        35757    .bss.prev_tick_remainder  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x1000341a   0x00000002   PAD
+    0x1000341c   0x00000004   Zero   RW        35756    .bss.prev_time      BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+    0x10003420   0x00000004   Zero   RW         1492    .bss.singleton_mutex_id  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x10003424   0x0000001c   Zero   RW         1490    .bss.singleton_mutex_obj  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x10003440   0x00000004   Zero   RW        36046    .bss.stdio_uart_inited  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x10003444   0x00000004   Zero   RW        36152    .bss.timer_ccr1_reg  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x10003448   0x00000318   Zero   RW        35532    .bss.uart_handlers  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/serial_device.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000017e4, Max: 0x00006000, ABSOLUTE, COMPRESSED[0x00000058])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000004   Data   RW        36325    .data               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x20000004   0x00000004   Data   RW        36351    .data               c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strtok.o)
+    0x20000008   0x00000034   Data   RW          240    .data.Lsm6dslAccDrv  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/Components/lsm6dsl/lsm6dsl.o
+    0x2000003c   0x00000055   Data   RW        25733    .data._ZL11dns_servers  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x20000091   0x00000003   PAD
+    0x20000094   0x00000004   Data   RW        25729    .data._ZL13dns_unique_id  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x20000098   0x00000002   Data   RW        25728    .data._ZL14dns_message_id  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x2000009a   0x00000002   PAD
+    0x2000009c   0x00000004   Data   RW        28939    .data.irq_handler   BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x200000a0   0x000000a4   Data   RW         1080    .data.os            BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_kernel.o
+    0x20000144   0x00000004   Data   RW        32108    .data.uwTickPrio    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/TARGET_STM32L4/STM32Cube_FW/STM32L4xx_HAL_Driver/stm32l4xx_hal.o
+    0x20000148   0x00000054   Zero   RW        36322    .bss                c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x2000019c   0x00000060   Zero   RW        36517    .bss                c:\ProgramData\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libspace.o)
+    0x200001fc   0x00000004   Zero   RW           91    .bss.AccelerometerDrv  BUILD/DISCO_L475VG_IOT01A/ARMC6/BSP_B-L475E-IOT01/Drivers/BSP/B-L475E-IOT01/stm32l475e_iot01_accelero.o
+    0x20000200   0x00000038   Zero   RW        35880    .bss.LptimHandle    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20000238   0x00000004   Zero   RW        29968    .bss._ZGVZL15default_consolevE7console  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x2000023c   0x00000004   Zero   RW          369    .bss._ZGVZN13WiFiInterface20get_default_instanceEvE3ism  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x20000240   0x00000004   Zero   RW        28345    .bss._ZGVZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKcE5queue  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x20000244   0x00000014   Zero   RW        25727    .bss._ZL11dns_call_in  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x20000258   0x00000014   Zero   RW        25731    .bss._ZL15dns_query_queue  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x2000026c   0x0000000c   Zero   RW        25735    .bss._ZL9dns_cache  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x20000278   0x00000028   Zero   RW        25730    .bss._ZL9dns_mutex  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/nsapi_dns.o
+    0x200002a0   0x00000004   Zero   RW        29199    .bss._ZN10CThunkBase17_cthunk_free_realE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/CThunkBase.o
+    0x200002a4   0x00000028   Zero   RW        29256    .bss._ZN4mbed8FileBase6_mutexE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x200002cc   0x00000004   Zero   RW        29257    .bss._ZN4mbed8FileBase8_defaultE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/FileBase.o
+    0x200002d0   0x00000048   Zero   RW        29758    .bss._ZN4mbed8internal12_GLOBAL__N_113os_timer_dataE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x20000318   0x00000004   Zero   RW        29757    .bss._ZN4mbed8internal8os_timerE  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_os_timer.o
+    0x2000031c   0x00000004   Zero   RW        25382    .bss._ZZN12NetworkStack7call_inEiN4mbed8CallbackIFvvEEEE11event_queue  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/connectivity/netsocket/source/NetworkStack.o
+    0x20000320   0x0000051c   Zero   RW          368    .bss._ZZN13WiFiInterface20get_default_instanceEvE3ism  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362Interface.o
+    0x2000083c   0x00000004   PAD
+    0x20000840   0x00000300   Zero   RW        28343    .bss._ZZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKcE12queue_buffer  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x20000b40   0x0000005c   Zero   RW        28344    .bss._ZZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKcE5queue  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x20000b9c   0x00000004   PAD
+    0x20000ba0   0x00000800   Zero   RW        28346    .bss._ZZN4mbed33do_shared_event_queue_with_threadIL12osPriority_t24ELj768ELj2048EEEPN6events10EventQueueEPKcE5stack  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/events/source/mbed_shared_queues.o
+    0x200013a0   0x00000004   Zero   RW        30271    .bss._ZZN4rtos6Kernel4impl14get_tick_countEvE6tick_l  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/rtos/source/Kernel.o
+    0x200013a4   0x00000002   Zero   RW          804    .bss._ZZN8ISM433624openEPKciS1_iE12rnglocalport  BUILD/DISCO_L475VG_IOT01A/ARMC6/COMPONENT_ism43362/ISM43362/ISM43362.o
+    0x200013a6   0x00000002   PAD
+    0x200013a8   0x00000024   Zero   RW         1487    .bss._main_thread_attr  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtos_rtx.o
+    0x200013cc   0x000000e0   Zero   RW         1460    .bss._static_mutexes_mem  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x200014ac   0x00000004   Zero   RW        29692    .bss.error_count    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x200014b0   0x00000038   Zero   RW        28941    .bss.events         BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_lp_ticker_api.o
+    0x200014e8   0x00000040   Zero   RW        29691    .bss.first_error_ctx  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20001528   0x00000001   Zero   RW        29695    .bss.halt_in_progress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20001529   0x00000001   PAD
+    0x2000152a   0x00000002   Zero   RW        35743    .bss.irq_channel_used  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x2000152c   0x00000004   Zero   RW        35696    .bss.irq_handler    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/can_api.o
+    0x20001530   0x00000004   Zero   RW        35745    .bss.irq_handler    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/gpio_irq_api.o
+    0x20001534   0x00000001   Zero   RW        35873    .bss.lp_delayed_prog  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20001535   0x00000001   Zero   RW        29688    .bss.mbed_error_in_progress  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_error.o
+    0x20001536   0x00000002   PAD
+    0x20001538   0x00000004   Zero   RW        29954    .bss.mbed_heap_size  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/platform/source/mbed_retarget.o
+    0x2000153c   0x00000004   Zero   RW        35900    .bss.mbed_sdk_inited  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/mbed_overrides.o
+    0x20001540   0x00000004   Zero   RW         1477    .bss.mbed_stack_isr_size  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_boot.o
+    0x20001544   0x000001f0   Zero   RW         1458    .bss.os.libspace    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x20001734   0x00000050   Zero   RW         1096    .bss.os.msgqueue.mem  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Source/rtx_lib.o
+    0x20001784   0x00000001   Zero   RW         1461    .bss.os_kernel_is_active.os_kernel_active  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/TOOLCHAIN_ARM_STD/mbed_boot_arm_std.o
+    0x20001785   0x00000001   Zero   RW        35875    .bss.roll_over_flag  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20001786   0x00000001   Zero   RW        35878    .bss.sleep_manager_locked  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/lp_ticker.o
+    0x20001787   0x00000001   Zero   RW        28902    .bss.state_saved    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/hal/source/mbed_critical_section_api.o
+    0x20001788   0x0000004c   Zero   RW        36048    .bss.stdio_uart     BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/serial_api.o
+    0x200017d4   0x00000004   Zero   RW         1525    .bss.terminate_hook  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/cmsis/device/rtos/source/mbed_rtx_handlers.o
+    0x200017d8   0x00000004   Zero   RW        36151    .bss.timer_cnt_reg  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x200017dc   0x00000004   Zero   RW        36153    .bss.timer_dier_reg  BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/us_ticker.o
+    0x200017e0   0x00000004   Zero   RW        35758    .bss.total_ticks    BUILD/DISCO_L475VG_IOT01A/ARMC6/mbed-os/targets/TARGET_STM/hal_tick_overrides.o
+
+
+    Execution Region ARM_LIB_HEAP (Base: 0x200017f0, Size: 0x00016410, Max: 0x00016410, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200017f0   0x00016410   Zero   RW            2    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x20017c00, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20017c00   0x00000400   Zero   RW            3    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     72594       5666       6176        404     111076      60580   Object Totals
+         0          0         64          0      92432          0   (incl. Generated)
+       194          0          8          5         42          0   (incl. Padding)
+     14678        630        468         20        576      11456   Library Totals
+        28          0          3          0          0          0   (incl. Padding)
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     87272       6296       6644        424     111652      62524   Grand Totals
+     87272       6296       6644        184     111652      62524   ELF Image Totals (compressed)
+     87272       6296       6644        184          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                93916 (  91.71kB)
+    Total RW  Size (RW Data + ZI Data)            112076 ( 109.45kB)
+    Total ROM Size (Code + RO Data + RW Data)      94100 (  91.89kB)
+
+==============================================================================
+
