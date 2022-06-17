@@ -41,18 +41,11 @@
 #include "NFC.h"
 #include "NFCEEPROM.h"
 #include "EEPROMDriver.h"
-// #include "../mbed-os/connectivity/drivers/nfc/TARGET_M24SR/include/nfc/m24sr_driver.h"
 #include <cstdio>
 
 #define MAXIMUM_BUFFER_SIZE 32
 
-// I2C
-// #define SCL PB_8
-// #define SDA PB_9
-
 // wifi
-// #define HOSTNAME "192.168.50.226"
-// #define HOSTNAME "192.168.43.85"
 #define HOSTNAME "192.168.43.36"
 
 using events::EventQueue;
@@ -294,22 +287,6 @@ public:
 
     void run()
     {
-        
-
-        // while (1){
-        //     // printf("flag\n");
-        //     bool match = false;
-        //     if (!finished) {
-        //         for (int i = 0; i < sizeof(goal_str)/sizeof(char); i++) {
-        //             match &= (ndef_msg[i] == goal_str[i]);
-        //         } 
-        //         if (match)
-        //         int response = _socket.send(ndef_msg, ndef_len);
-        //     }
-            
-        //     ThisThread::sleep_for(500);
-        // }
-
         mutex.lock();
         do {
             ThisThread::sleep_for(500);
@@ -393,16 +370,6 @@ public:
             return;
         }
         */
-
-        /* exchange an HTTP request and response */
-/*
-        if (!send_http_request()) {
-            return;
-        }
-        if (!receive_http_response()) {
-            return;
-        }
-*/
         printf("Demo concluded successfully \r\n");
     }
 
@@ -529,7 +496,6 @@ private:
 };
 
 int main() {
-    printf("\r\nStarting socket demo\r\n\r\n");
     Thread socket_t;
     Thread nfc_t;
 
@@ -538,7 +504,6 @@ int main() {
 #endif
     SocketDemo *socket_example = new SocketDemo();
     MBED_ASSERT(socket_example);
-    // example->run();
 
     EventQueue NFCqueue;
     NFCEEPROMDriver& eeprom_driver = get_eeprom_driver(NFCqueue);
